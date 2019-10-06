@@ -1,0 +1,34 @@
+[0927/212612:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0927/212616:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0927/212616:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0927/212616:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0927/212617:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0927/215608:INFO:exception_record.cc(518)] [QB]Process ID: 21004 Type: 2
+[0927/215614:INFO:http_cache_transaction.cc(72)] IgnoreZeroCacheError: 0
+[0927/221433:INFO:exception_record.cc(518)] [QB]Process ID: 7544 Type: 2
+[0927/221434:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[0927/221434:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[0927/221435:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[0927/224434:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[0927/225721:INFO:exception_record.cc(518)] [QB]Process ID: 1152 Type: 2
+[0927/225733:INFO:exception_record.cc(518)] [QB]Process ID: 11128 Type: 2
+[0927/225739:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0927/231434:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[0927/234438:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[0928/001438:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[0928/004438:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[0928/005810:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/005810:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/005810:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011025:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011025:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011438:WARNING:quota_manager.cc(1833)] Create directory failed for path
+[0928/011615:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011615:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011615:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011834:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011834:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011834:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011834:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/011834:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0928/013930:ERROR:browser_gpu_channel_host_factory.cc(119)] Failed to launch GPU process.

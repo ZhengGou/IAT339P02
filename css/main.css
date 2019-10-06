@@ -1,0 +1,567 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+*{
+  box-sizing:border-box; 
+  padding:0;
+  margin:0; 
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:"Lato",sans-serif;/*lab2:Change the default font.*/
+  font-size:16px;
+  color:#444442;
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+header{
+    background-color: #FDBB87;
+    text-align: center;
+    color:white;
+    padding-top:60px;
+}
+
+main{
+  margin:0 100px;
+}
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: double;
+  border-top-color: #FDBB87;
+
+}
+
+header>p{
+  line-height: 5em;                                        /*Give space between <h1> and <p>*/
+}
+
+header>img{
+  text-align: center;
+}
+
+
+
+
+
+
+/*lab2:Add space between <section> elements.*/
+section{
+  margin:30px auto;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*https://www.fonts.com/font/urw/franklin-gothic/medium*/
+  font-weight: bold;
+  margin-top: 1rem;
+  color:#CD9F7B;
+}
+
+h3 {
+  
+  font-style: italic;
+  margin-top: 1rem;
+  color:#FF877F;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+section>h3, section>h4 {
+  line-height:3em;
+}
+
+
+
+/* header nav*/
+#top_nav{
+  display:flex;
+  justify-content: center;
+  margin:0px auto;
+  background-color:#CD9F7B;
+}
+
+#top_nav a{
+  font-size:14px;
+  text-decoration:none;
+  padding:1em  2em;
+  display: inline-block;
+  background-color:#CD9F7B; 
+  color:white;
+  transition: background-color .5s linear, color .5s linear;
+}
+
+#top_nav a:hover, #top_nav a:focus{
+  background-color:white;
+  color:black;
+  text-decoration: none;
+
+}
+
+code {
+  background-color: #EEE;
+  width:60%;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+
+/*Styling text input field with label*/
+.textElement input[type=text]{
+  width:30%;
+  border:2px solid #EFEFEF;
+  display:block;
+}
+
+
+/* Styling for radio button*/
+input[type=radio]{
+  width:1rem;
+  height:1rem;
+  border-radius: 50%;
+  -webkit-appearance: inherit;
+  border:1px solid #aaa;
+  position:relative;
+  box-sizing:border-box;
+}
+
+input[type=radio]:hover{
+  border:1px solid #1abc9c;
+  background:#eee;
+}
+
+input[type=radio]:active, input[type=radio]:focus{
+  border:1px solid #ccc;
+  background:#1abc9c;
+}
+
+/*Styling paragraph*/
+.para p{
+  width:70%;
+  line-height:2rem;
+}
+
+/*Styling Numbered Lists 
+reference:https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_ex*/
+ol{
+  list-style-type: lower-roman;
+  padding-left:1em;
+}
+
+
+/*Style the <input> and <label> using Building Forms (Shay Howe) (Links to an external site.) as a guide. Add HTML as necessary to allow further control of the styling, and make sure:
+The label and text input look visually related.
+The text input shows us when it has been interacted with, both on hover and focus.*/
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text]:hover,input[type=text]:focus{
+  opacity: 0.5;
+}
+
+select{
+  width:6em;
+}
+  
+button{
+  padding:5px;
+}
+  
+button:hover, button:focus{
+  color:white;
+  background-color:green;
+  border:2px solid black;
+}
+
+
+
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+/*lab2:Add a different hover and focus state styling to the in-text link.*/
+#intext{
+  font-size:16px;
+  font-weight:bold;
+  text-decoration: none;
+  transition:font-size 0.5s,font-weight 0.25s;
+  
+}
+
+#intext:hover,#intext:focus{
+  font-size:30px;
+  font-weight: bolder;
+}
+
+/*lab2:Add a different hover and focus state styling to the image as a link.*/
+#image{
+  border:2px inset #FF877F;
+  width: 300px;
+  height:auto;
+}
+
+#image:hover,#image:focus{
+    opacity: 0.95;
+    -moz-box-shadow: 0 0 40px #ccc;
+    -webkit-box-shadow: 0 0 40px #ccc;
+    box-shadow: 0 0 40px #ccc;
+
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/*main nav item*/
+.main_nav{
+  display:flex;
+  min-width:27em;
+  max-width:60%;
+  background:#CD9F7B;
+  justify-content: center;
+  
+}
+.main_nav a{
+  font-size:14px;
+  color:white;
+  text-decoration:none;
+  padding:1em  2em;
+  display: inline-block;
+}
+
+.main_nav a:hover, .main_nav a:focus{
+  background-color:white;
+  color:black;
+  text-decoration: none;
+
+}
+
+
+.productImage{                                     /*Styling product image*/
+  display:inline-block;
+  margin:1rem;
+  padding: 1rem;
+  border:2px solid #FF877F;
+  border-radius: 5%;
+}
+
+.productImage img{
+  width:225px;
+  height:auto;
+  opacity: 0.95;
+    -moz-box-shadow: 0 0 40px #ccc;
+    -webkit-box-shadow: 0 0 40px #ccc;
+    box-shadow: 0 0 40px #ccc;
+}
+
+.productImage a{
+  font-size:0.9rem;
+  color:grey;
+  text-decoration: underline;
+}
+
+.productImage a:hover, .productImage a:focus{
+  color:blue;
+  text-decoration: none;
+}
+/* styling form*/
+form{
+  background-color:#FFEBE0;
+  width:50%;
+  height:auto;
+  border-radius: 5%;
+  padding:0 2rem 1.5rem 2rem;
+  line-height: 2em;
+}
+
+form input[type=text]{
+  border:2px solid #EFEFEF;
+}
+
+.rd{
+  margin:0 1rem;
+}
+
+/* style whole page button*/
+button{
+  padding:.5rem 2rem;
+  border-radius:5%;
+  border:none;
+  background-color:#FF877F;
+  color:#444442;
+  font-weight:bold;
+  box-shadow: 5px 5px 5px #7D7D7D;
+}
+
+button:hover, button:focus{
+  color:#FF877F;
+  background-color: #444442;
+}
+
+#row button[type=submit]{
+  float: right;
+}
+
+
+/*Styling cart items and checkout button*/
+table{
+  width:100%;
+}
+
+.tables{
+  border:2px solid #FF877F;
+  min-width:40em;
+  max-width:60%;
+  margin:0 0 2rem 0;
+  padding:0 1rem;
+}
+
+th{
+  border-bottom: 2px solid #FF877F;
+  line-height:2rem;
+}
+
+tr{
+  text-align: center;
+}
+
+td{
+  width:auto;
+  padding-top:3rem;
+}
+
+td img{
+  width:200px;
+  height:auto;
+}
+
+td>button{ /*when in desktop size, "Remove" button will be displayed*/
+  margin:0 auto;
+  display:block;
+}
+
+td i{ /*"X" icon is hidden when in desktop size*/
+  display:none !important; /*icon still visible when display:none, add !important to override the code*/
+
+}
+
+#checkoutBtn{
+  float: right;
+}
+
+li{
+  line-height:2rem;
+}
+
+ul{
+  padding-left:1em;
+}
+
+#citations ul{
+  font-size:.88em;
+  min-width:27em;
+  max-width: 80%;
+  margin:0 auto;
+  list-style-type: none;
+}
+
+
+/*footer*/
+footer{
+  background-color: #FDBB87;
+  color:white;
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 2em;
+  
+}
+
+#up i{ /*Return top button located on the bottom-right of the screen*/
+  font-size:2.5rem;
+  position:fixed;
+  top:92%;
+  left:95.5%;
+  opacity:.6;
+  color:grey;
+}
+
+#up i:hover, #up i:focus{
+  opacity:1;
+  color:#FF877F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+@media screen and (max-width:50em){ /*For mobile and small tablet screen*/
+  body{
+    min-width:30em; /*Minimum width for mobile screen*/
+    max-width:100%;
+  }
+
+  main{
+    margin:0 25px;
+  }
+
+  header>p{
+    font-size:1.2rem;                                        /*Give space between <h1> and <p>*/
+  }
+
+
+  /* header nav*/
+  #top_nav{
+    display:block;
+    text-align:center;
+  }
+
+  #top_nav a{
+    width:100%;
+    display:block;
+  }
+
+  code {
+    width:100%;
+    line-height: 2em;
+    margin-bottom: 1em;
+  }
+
+
+  /* 
+    INTERACTIVE ELEMENTS -------------------
+  */
+
+
+  /*Styling text input field with label*/
+  .textElement input[type=text]{
+    width:60%;
+  }
+
+
+  /* Styling for radio button*/
+  input[type=radio]{
+    width:1.2rem;
+    height:1.2rem;
+  }
+
+  /*Styling paragraph*/
+  .para p{
+    width:100%;
+  }
+
+
+
+  /* 
+    TEXT ELEMENTS -------------------
+  */
+
+  /*lab2:Add a different hover and focus state styling to the image as a link.*/
+  #image{
+    width: 100%;
+  }
+
+  /* 
+    COMBINED ELEMENTS -------------------
+  */
+
+  /*main nav item*/
+  .main_nav{
+    min-width:27em;
+    max-width:80%;
+  }
+
+  .productImage img{
+    width:300px;
+  }
+
+  /* styling form*/
+  form{
+    width:100%;
+  }
+
+  /*Styling cart items and checkout button*/
+  table{
+    width:100%;
+  }
+
+  .tables{
+    min-width:27em;
+    max-width:100%;
+  }
+
+  td>button{ /*when in mobile size, "Remove" button will be hidden*/
+    display:none;
+  }
+
+  td i{ /*"X"icon will be displayed when in mobile size*/
+    display:block !important;
+    font-size: 2rem;
+    color:#FF877F;
+  }
+
+  td i:hover, td i:focus{
+    color:red;
+  }
+
+
+  #up i{
+    font-size:2.5rem;
+    position:fixed;
+    top:93%;
+    left:90%;
+  }
+}

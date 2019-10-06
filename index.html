@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>P01 - Style Guide Template</title>
+
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header" id="topOfThePage">
+    <figure><img src="img/logo.png" alt="" width="100" /></figure>
+    <h1> PetCare Style Guide</h1>
+
+    <p>PSC is a organization that can help you pet life better.</p>
+
+
+    <nav id="top_nav">
+      <a href="#interactive_elements">Interactive Elements</a>
+      <a href="#text_elements">Text Elements</a>
+      <a href="#combined_elements">Combined Elements</a>
+      <a href="product_listing.html">Product Listing Template</a>
+      <a href="checkout.html">Checkout Template</a>
+      <a href="#citations">Citations</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!--1.in-text link-->
+      <section class="element">
+        <h3>In-text link</h3>
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt; &lt;a href ="index.html" id ="intext"&gt; PetsCare(PSC) &lt;/a&gt;is a public adoption organization.&lt;/p&gt;</code>
+        <h4>Rendered element:</h4>
+        <!--lab2:Add a different hover and focus state styling to the in-text link.-->
+        <p><a href="index.html" id="intext">PetsCare(PSC)</a> is a public adoption organization.</p>
+
+      </section>
+
+      <!--Navigation link-->
+      <section class="element">
+        <h3>Navigation link</h3>
+        <h4>Sample code:</h4>
+        <code>&lt;nav class="main_nav"&gt;&nbsp;<br>&lt;a href ="index.html"&gt; Nav1 &lt;/a&gt;<br>&nbsp;&lt;/nav&gt;</code>
+        <h4>Rendered element:</h4>
+        <nav class="main_nav"><a href="index.html">Nav1</a></nav>
+
+      </section>
+
+
+
+
+      <!--Submit button-->
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code>
+        <h4>Rendered element: </h4>
+        <button type="submit">Submit</button>
+
+        <h4>Sample code:</h4>
+        <code>&lt;button type="submit"&gt;Reset&lt;/button&gt;</code>
+        <h4>Rendered element: </h4>
+        <button type="reset">Reset</button>
+      </section>
+
+      <!--A text input field and a label-->
+      <section class="element textElement">
+        <h3>Text Input Field with Label</h3>
+        <h4>Sample code:</h4>
+        <code>&lt;label for="demo-input"&gt;Enter your name:&lt;/label&gt;</code>
+        <code>&lt;input id="demo-input" type="text" placeholder="Margaret"&gt;</code>
+        <h4>Rendered element: </h4>
+        <label for="demo-input">Enter your name:</label>
+        <input id="demo-input" type="text" placeholder="Margaret">
+      </section>
+
+      <!--Radio Button with Label-->
+      <section class="element radioElement">
+        <h3>Radio Button with Label</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label for="radioB"&gt;Change color:&lt;/label&gt;</code>
+        <code>&lt;input type="radio" id="radioB" value="radioB"&gt;</code>
+        <code>&lt;label for="radioB"&gt;red&lt;/label&gt;</code>
+
+        <h4>Rendered element: </h4>
+        <label for="radioB">Change color:</label>
+        <input type="radio" id="radioB" value="radioB">
+        <label for="radioB">red</label>
+      </section>
+
+      <!--3.An image as a link-->
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>Sample code:</h4>
+        <code>&lt;a href="index.html"&gt; &lt;img id="image" src= "img/Munchkin.jpg" alt=""&gt; &lt;/a&gt;</code>
+        <h4>Rendered element: </h4>
+        <!--lab2:Add a different hover and focus state styling to the image as a link.-->
+        <a href="index.html"><img id="image" src="img/Munchkin.jpg" alt="" ></a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+      <!--4.Four levels of heading-->
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;h2&gt;This is h2.&lt;/h2&gt;</code>
+        <code>&lt;h3&gt;This is h3.&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;This is h4.&lt;/h4&gt;</code>
+        <code>&lt;h5&gt;This is h5.&lt;/h5&gt;</code>
+
+        <h4>Rendred element:</h4>
+        <div>
+          <h2>This is h2.</h2>
+          <h3>This is h3.</h3>
+          <h4>This is h4.</h4>
+          <h5>This is h5.</h5>
+        </div>
+
+      </section>
+
+      <!--5.A paragraph-->
+      <section class="element para">
+        <h3>Paragraphs</h3>
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Do you allergy with your pet hair? If you want to rehome your pet, please connet us.Do you allergy with your pet hair? If you want to rehome your pet, please connet us.Do you allergy with your pet hair? If you want to rehome your pet, please connet us.&lt;/p&gt; </code>
+        <h4>Rendered element:</h4>
+        <p>Do you allergy with your pet hair? If you want to rehome your pet, please connet us.Do you allergy with your
+          pet hair? If you want to rehome your pet, please connet us.Do you allergy with your pet hair? If you want to
+          rehome your pet, please connet us.</p>
+      </section>
+
+      <!--Number lists-->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;ol&gt; <br>
+        &nbsp;  &lt;li&gt;First item&lt;/li&gt; <br>
+         &nbsp; &lt;li&gt;Second item&lt;/li&gt; <br>
+         &lt;/ol&gt;</code>
+
+        <h4>Rendred element:</h4>
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+      <!--main navigation-->
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;nav&gt; <br>
+        &nbsp;  &lt;a href="index.html"&gt;Home&lt;/a&gt; <br>
+        &nbsp;  &lt;a href="product_listing.html"&gt;Product&lt;/a&gt; <br>
+        &nbsp;  &lt;a href="index.html"&gt;Profile&lt;/a&gt; <br>
+        &nbsp;  &lt;a href="index.html"&gt;About&lt;/a&gt; <br>
+       
+         &lt;/nav&gt;</code>
+
+        <h4>Rendred element:</h4>
+
+        <nav class="main_nav">
+          <a href="index.html">Home</a>
+          <a href="product_listing.html">Product</a>
+          <a href="index.html">Profile</a>
+          <a href="index.html">About</a>
+        </nav>
+
+      </section>
+
+      <!--Product/Service Listing-->
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;section&gt;<br>
+          &nbsp;&lt;div&gt;<br>
+            &nbsp;&nbsp;&lt;figure&gt;<br>
+              &nbsp;&nbsp;&nbsp;&lt;img src="img/Munchkin.jpg" alt=""&gt;<br>
+            &nbsp;&nbsp;&lt;/figure&gt;<br>
+            &nbsp;&nbsp;&lt;h4&gt;Munchkin&lt;/h4&gt;<br>
+            &nbsp;&nbsp;&lt;a href="index.html"&gt; Detailed description&lt;/a&gt;<br>
+          &nbsp;&lt;/div&gt;<br>
+          &nbsp;&lt;div&gt;<br>
+            &nbsp;&nbsp;&lt;figure&gt;<br>
+              &nbsp;&nbsp;&nbsp;&lt;img src="img/BritshShorthair.jpg" alt=""&gt;<br>
+            &nbsp;&nbsp;&lt;/figure&gt;<br>
+           &nbsp;&nbsp;&nbsp; &lt;h4&gt;BritshShorthair&lt;/h4&gt;<br>
+           &nbsp;&nbsp; &lt;a href="index.html"&gt; Detailed description&lt;/a&gt;<br>
+          &nbsp;&lt;/div&gt;<br>
+          &nbsp;&lt;div&gt;<br>
+            &nbsp;&nbsp;&lt;figure&gt;<br>
+             &nbsp;&nbsp;&nbsp; &lt;img src="img/ragdoll.jpg" alt=""&gt;<br>
+            &nbsp;&nbsp;&lt;/figure&gt;<br>
+            &nbsp;&nbsp;&lt;h4&gt;Ragdoll&lt;/h4&gt;<br>
+           &nbsp;&nbsp; &lt;a href="index.html"&gt; Detailed description&lt;/a&gt;<br>
+         &nbsp; &lt;/div&gt;<br>
+        &lt;/section&gt;<br>
+      </code>
+
+        <h4>Rendered element:</h4>
+
+        <section>
+          <div class="productImage">
+            <figure>
+              <img src="img/Munchkin.jpg" alt="">
+            </figure>
+            <h4>Munchkin</h4>
+            <a href="index.html"> Detailed description</a>
+          </div>
+          <div class="productImage">
+            <figure>
+              <img src="img/BritishShorthair.jpg" alt="">
+            </figure>
+            <h4>Britsh Shorthair</h4>
+            <a href="index.html"> Detailed description</a>
+          </div>
+          <div class="productImage">
+            <figure>
+              <img src="img/ragdoll.jpg" alt="">
+            </figure>
+            <h4>Ragdoll</h4>
+            <a href="index.html"> Detailed description</a>
+          </div>
+        </section>
+
+      </section>
+
+      <!--Payment Form-->
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt; <br>
+          &nbsp; &lt;section id="row"&gt;<br>
+          &nbsp; &lt;h3&gt;Payment Form&lt;/h3&gt;<br>
+          &nbsp; &nbsp;&lt;div class="col-radio"&gt;<br>
+  
+          &nbsp; &nbsp; &nbsp; &lt;label &gt;Select Card Type:&lt;/label&gt;<br>
+          &nbsp; &nbsp; &nbsp; &lt;input type="radio" name="cardtype" value="Visa"&gt;Visa<br>
+          &nbsp; &nbsp; &nbsp; &lt;input type="radio" name="cardtype" value="Visa"&gt;Mastercard<br>
+  
+          &nbsp; &nbsp; &lt;/div&gt;&lt;br&gt;<br>
+  
+          &nbsp; &nbsp;&lt;div class="col"&gt;<br>
+  
+          &nbsp; &nbsp; &nbsp; &lt;label for="inputcname"&gt;Cardholder's name:&lt;/label&gt;<br>
+          &nbsp; &nbsp; &nbsp;  &lt;input id="inputcname" placeholder="Margaret LU" type="text"&gt;<br>
+  
+              
+  
+              &nbsp; &nbsp; &nbsp; &lt;label for="inputcardnumber"&gt;Card Number:&lt;/label&gt;<br>
+              &nbsp; &nbsp; &nbsp;  &lt;input id="inputcardnumber" placeholder="16-digits" type="text"&gt;<br>
+  
+              &nbsp; &nbsp;  &lt;/div&gt;&lt;br&gt;<br>
+  
+  
+              &nbsp; &nbsp; &lt;div class="col"&gt;<br>
+  
+              &nbsp; &nbsp; &nbsp; &lt;label for="inputDate"&gt;Expiration date:&lt;/label&gt;<br>
+              &nbsp; &nbsp; &nbsp; &lt;input id="inputDate" placeholder="15" type="text"&gt;<br>
+  
+              &nbsp; &nbsp; &nbsp; &lt;label for="inputYear"&gt;Year:&lt;/label&gt;<br>
+              &nbsp; &nbsp; &nbsp;  &lt;input id="inputYear" placeholder="2019" type="text"&gt;<br>
+  
+              
+              &nbsp; &nbsp; &nbsp; &lt;label for="code"&gt;Security Code:&lt;/label&gt;<br>
+              &nbsp; &nbsp; &nbsp;  &lt;input id="code" name="code" placeholder="3-digits" type="text"&gt;<br>
+  
+              &nbsp; &nbsp;  &lt;/div&gt;&lt;br&gt;<br>
+  
+              &nbsp; &nbsp; &lt;button type="submit" &gt;Submit&lt;/button&gt;<br>
+  
+              &nbsp; &lt;/section&gt;<br>
+  
+               &lt;/form&gt;<br>
+      </code>
+
+        <h4>Rendered element:</h4>
+
+        <form>
+          <section id="row">
+            <h3>Payment Form</h3>
+            <div class="col-radio">
+
+              <label>Select Card Type: </label><br>
+              <input type="radio" name="cardtype" value="Visa" class="rd">Visa
+              <span class="checkmark"></span>
+              <input type="radio" name="cardtype" value="Visa" class="rd">Mastercard
+              <span class="checkmark"></span>
+            </div><br>
+
+            <div class="col">
+
+              <label for="inputcname">Cardholder's name:</label>
+              <input id="inputcname" placeholder="Margaret LU" type="text">
+
+              <label for="inputcardnumber">Card Number:</label>
+              <input id="inputcardnumber" placeholder="16-digits" type="text">
+
+            </div><br>
+
+
+            <div class="col">
+
+              <label for="inputDate">Expiration date:</label>
+              <input id="inputDate" placeholder="01" type="text">
+
+              <label for="inputYear">Year:</label>
+              <input id="inputYear" placeholder="2019" type="text">
+
+              <label for="code">Security Code:</label>
+              <input id="code" name="code" placeholder="3-digits" type="text">
+
+            </div><br>
+
+            <button type="submit">Submit</button>
+
+          </section>
+
+        </form>
+
+      </section>
+
+      <!--Checkout Cart-->
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <h4>Sample code:</h4>
+        <code>
+        &lt;table&gt;<br>
+        &nbsp; &lt;tr&gt;<br>
+        &nbsp;&nbsp;&lt;th&gt;No.&lt;/th&gt;<br>
+        &nbsp;&nbsp;&lt;th&gt;Animals&lt;/th&gt;<br>
+        &nbsp;&nbsp;&lt;th&gt;Price ($)&lt;/th&gt;<br>
+        &nbsp;&nbsp;&lt;th&gt; &lt;/th&gt;<br>
+        &nbsp;&lt;/tr&gt;<br>
+        &nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp; &lt;td&gt;1.&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;<br>
+        &nbsp;&nbsp;&nbsp; &lt;figure&gt;&lt;img src="img/Munchkin.jpg" alt="product"&gt;&lt;/figure&gt;<br>
+        &nbsp;&nbsp;&nbsp; &lt;figurecaption&gt;Munchkin&lt;/figurecaption&gt;<br>
+        &nbsp;&nbsp;&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;$500.00&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;button type="button" &gt;Remove&lt;/button&gt;<br>
+        &nbsp;&nbsp;&lt;/td&gt;<br>
+        &nbsp;&lt;/tr&gt;<br>
+        &nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp; &lt;td&gt;2.&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;<br>
+        &nbsp;&nbsp;&nbsp; &lt;figure&gt;&lt;img src="img/ragdoll.jpg" alt="product"&gt;&lt;/figure&gt;<br>
+        &nbsp;&nbsp;&nbsp; &lt;figurecaption&gt;Ragdoll&lt;/figurecaption&gt;<br>
+        &nbsp;&nbsp;&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;$700.00&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;button type="button" &gt;Remove&lt;/button&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;i  class="fa fa-close"&gt;&lt;/i&gt;<br>
+        &nbsp;&nbsp;&lt;/td&gt;<br>
+        &nbsp;&lt;/tr&gt;<br>
+
+        &nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt; &lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;&lt;span&gt;Total:&lt;/span&gt;&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;$1200.00&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt; &lt;/td&gt;<br>
+        &nbsp;&lt;/tr&gt;<br>
+        &lt;/table&gt;&lt;br&gt;<br>
+
+        &lt;section&gt;<br>
+        &nbsp;&lt;button type="button" &gt;Proceed To Checkout&lt;/button&gt;<br>
+        &lt;/section&gt;<br>
+       </code>
+
+
+        <h4>Rendered element:</h4>
+
+        <section class="tables">
+
+          <table>
+            <tr>
+              <th>No.</th>
+              <th>Animals</th>
+              <th>Price ($)</th>
+              <th> </th>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>
+                <figure><img src="img/Munchkin.jpg" alt="product">
+                  <figcaption>Munchkin</figcaption>
+                </figure>
+
+              </td>
+              <td>$500.00</td>
+              <td>
+                <button type="button">Remove</button>
+                <i class="fa fa-close"></i>
+              </td>
+            </tr>
+
+            <tr>
+                <td>2.</td>
+                <td>
+                  <figure><img src="img/ragdoll.jpg" alt="product">
+                    <figcaption>Ragdoll</figcaption>
+                  </figure>
+  
+                </td>
+                <td>$700.00</td>
+                <td>
+                  <button type="button">Remove</button>
+                  <i class="fa fa-close"></i> <!--Remove button will be change to "X" icon when in mobile size-->
+                </td>
+              </tr>
+
+            <tr>
+              <td> </td>
+              <td><span>Total:</span></td>
+              <td>$1200.00</td>
+              <td> </td>
+            </tr>
+          </table><br>
+
+          <section id="checkoutBtn">
+              <button type="button">Proceed To Checkout</button>
+          </section>
+
+        </section>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <!--2. Given the company, define the basic branding ideas.These should include:
+      What does the company do, or offer?
+      Who is the company to potential customers? (as a person)
+      Why might this company entice someone to purchase a product or service-->
+
+    <section class="element">
+      <h2>Branding ideas</h2>
+
+      <ol>
+        <li>Q:What does the company do, or offer?<br>
+          A:The company is offer Animal adoption rehoming.</li>
+        <li>Q:Who is the company to potential customers? (as a person)<br>
+          A:The potential customers should be those people who are very love animals, agree to pay adoption fee and sign
+          the adoption visit agreement.</li>
+        <li>Q: Why might this company entice someone to purchase a product or service<br>
+          A:People prefer adoption instead of purchase.</li>
+      </ol>
+
+    </section>
+
+    <!--3. assemble brand components -->
+    <section class="element">
+      <h2>Branding components </h2>
+      <ul>
+        <!--font-->
+        <li>Font
+          <figure>
+            <img src="img/lato.png" alt="" height="400">
+            <figcaption>Main body font:Lato</figcaption>
+          </figure>
+          <figure>
+            <img src="img/FGM.png" alt="" width="400">
+            <figcaption>Heading2 font: Franklin Gothic Medium</figcaption>
+          </figure>
+         
+        </li>
+        <!--Colour palettes-->
+        <li>Colour palettes
+          <figure><img src="img/color.jpg" alt="" width="600"></figure>
+        </li>
+        <!--Potential imagery-->
+        <li>Potential imagery(logo)
+          <figure><img src="img/logo.png" alt="" width="200"></figure>
+        </li>
+      </ul>
+    </section>
+
+    <section id="up">
+        <a href="#topOfThePage"><i class="fa fa-arrow-circle-up"></i></a>
+    </section>
+  </main>
+
+
+
+
+
+  <footer>
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+       
+        <li>Logo image, cat images and color plane image were all create by myself.</li>
+
+        <li>URW Studio.Designer.<strong>Franklin Gothic Medium[font]</strong>. Retrieved from <a href=
+          "https://www.fonts.com/font/urw/franklin-gothic/medium ">https://www.fonts.com/font/urw/franklin-gothic/medium</a>.
+        </li>
+        <li>Łukasz Dziedzic.Designer.<strong>Lato[font]</strong>. Retrieved from <a href=
+          "https://fonts.google.com/specimen/Lato ">https://fonts.google.com/specimen/Lato</a>.
+        </li>
+      </ul>
+
+    </section>
+    <p>Copyright © 2019 by Wenyue He </p>
+  </footer>
+
+
+
+</body>
+
+
+</html>

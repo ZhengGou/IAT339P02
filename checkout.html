@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Choose your pet</title>
+    <!--Product/Service Listing-->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <figure><img src="img/logo.png" alt="" width="100" /></figure>
+        <h1> PetCare Style Guide</h1>
+
+        <p>PSC is a organization that can help you pet life better.</p>
+
+
+        <nav id="top_nav">
+            <a href="index.html#interactive_elements">Interactive Elements</a>
+            <a href="index.html#text_elements">Text Elements</a>
+            <a href="index.html#combined_elements">Combined Elements</a>
+            <a href="product_listing.html">Product Listing Template</a>
+            <a href="checkout.html">Checkout Template</a>
+            <a href="#citations">Citations</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--Checkout Cart-->
+        <section class="element">
+            <h3>Checkout Cart</h3>
+
+            <h4>Sample code:</h4>
+            <code>
+                    &lt;table&gt;<br>
+                    &nbsp; &lt;tr&gt;<br>
+                    &nbsp;&nbsp;&lt;th&gt;No.&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&lt;th&gt;Animals&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&lt;th&gt;Price ($)&lt;/th&gt;<br>
+                    &nbsp;&nbsp;&lt;th&gt; &lt;/th&gt;<br>
+                    &nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp; &lt;td&gt;1.&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp; &lt;figure&gt;&lt;img src="img/Munchkin.jpg" alt="product"&gt;&lt;/figure&gt;<br>
+                    &nbsp;&nbsp;&nbsp; &lt;figurecaption&gt;Munchkin&lt;/figurecaption&gt;<br>
+                    &nbsp;&nbsp;&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt;$500.00&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;button type="button" &gt;Remove&lt;/button&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;i  class="fa fa-close"&gt;&lt;/i&gt;<br>
+                    &nbsp;&nbsp;&lt;/td&gt;<br>
+                    &nbsp;&lt;/tr&gt;<br>
+                    &nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp; &lt;td&gt;2.&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp; &lt;figure&gt;&lt;img src="img/ragdoll.jpg" alt="product"&gt;&lt;/figure&gt;<br>
+                    &nbsp;&nbsp;&nbsp; &lt;figurecaption&gt;Ragdoll&lt;/figurecaption&gt;<br>
+                    &nbsp;&nbsp;&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt;$700.00&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;button type="button" &gt;Remove&lt;/button&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;i  class="fa fa-close"&gt;&lt;/i&gt;<br>
+                    &nbsp;&nbsp;&lt;/td&gt;<br>
+                    &nbsp;&lt;/tr&gt;<br>
+            
+                    &nbsp;&lt;tr&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt; &lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt;&lt;span&gt;Total:&lt;/span&gt;&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt;$1200.00&lt;/td&gt;<br>
+                    &nbsp;&nbsp;&lt;td&gt; &lt;/td&gt;<br>
+                    &nbsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;&lt;br&gt;<br>
+            
+                    &lt;section&gt;<br>
+                    &nbsp;&lt;button type="button" &gt;Proceed To Checkout&lt;/button&gt;<br>
+                    &lt;/section&gt;<br>
+                   </code>
+
+
+            <h4>Rendred element:</h4>
+
+            <section class="tables">
+
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Animals</th>
+                        <th>Price ($)</th>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>
+                            <figure><img src="img/Munchkin.jpg" alt="product">
+                                <figcaption>Munchkin</figcaption>
+                            </figure>
+
+                        </td>
+                        <td>$500.00</td>
+                        <td>
+                            <button type="button">Remove</button>
+                            <i class="fa fa-close"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2.</td>
+                        <td>
+                            <figure><img src="img/ragdoll.jpg" alt="product">
+                                <figcaption>Ragdoll</figcaption>
+                            </figure>
+
+                        </td>
+                        <td>$700.00</td>
+                        <td>
+                            <button type="button">Remove</button>
+                            <i class="fa fa-close"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> </td>
+                        <td><span>Total:</span></td>
+                        <td>$1200.00</td>
+                        <td> </td>
+                    </tr>
+                </table><br>
+
+                <section id="checkoutBtn">
+                    <button type="button">Proceed To Checkout</button>
+                </section>
+
+            </section>
+        </section>
+
+       
+
+        <!--Payment Form-->
+        <section class="element">
+            <h3>Payment Form</h3>
+
+            <h4>Sample code:</h4>
+            <code>
+                    &lt;form&gt; <br>
+                    &nbsp; &lt;section id="row"&gt;<br>
+                    &nbsp; &lt;h3&gt;Payment Form&lt;/h3&gt;<br>
+                    &nbsp; &nbsp;&lt;div class="col-radio"&gt;<br>
+            
+                    &nbsp; &nbsp; &nbsp; &lt;label &gt;Select Card Type:&lt;/label&gt;<br>
+                    &nbsp; &nbsp; &nbsp; &lt;input type="radio" name="cardtype" value="Visa"&gt;Visa<br>
+                    &nbsp; &nbsp; &nbsp; &lt;input type="radio" name="cardtype" value="Visa"&gt;Mastercard<br>
+            
+                    &nbsp; &nbsp; &lt;/div&gt;&lt;br&gt;<br>
+            
+                    &nbsp; &nbsp;&lt;div class="col"&gt;<br>
+            
+                    &nbsp; &nbsp; &nbsp; &lt;label for="inputcname"&gt;Cardholder's name:&lt;/label&gt;<br>
+                    &nbsp; &nbsp; &nbsp;  &lt;input id="inputcname" placeholder="Margaret LU" type="text"&gt;<br>
+            
+                        
+            
+                        &nbsp; &nbsp; &nbsp; &lt;label for="inputcardnumber"&gt;Card Number:&lt;/label&gt;<br>
+                        &nbsp; &nbsp; &nbsp;  &lt;input id="inputcardnumber" placeholder="16-digits" type="text"&gt;<br>
+            
+                        &nbsp; &nbsp;  &lt;/div&gt;&lt;br&gt;<br>
+            
+            
+                        &nbsp; &nbsp; &lt;div class="col"&gt;<br>
+            
+                        &nbsp; &nbsp; &nbsp; &lt;label for="inputDate"&gt;Expiration date:&lt;/label&gt;<br>
+                        &nbsp; &nbsp; &nbsp; &lt;input id="inputDate" placeholder="15" type="text"&gt;<br>
+            
+                        &nbsp; &nbsp; &nbsp; &lt;label for="inputYear"&gt;Year:&lt;/label&gt;<br>
+                        &nbsp; &nbsp; &nbsp;  &lt;input id="inputYear" placeholder="2019" type="text"&gt;<br>
+            
+                        
+                        &nbsp; &nbsp; &nbsp; &lt;label for="code"&gt;Security Code:&lt;/label&gt;<br>
+                        &nbsp; &nbsp; &nbsp;  &lt;input id="code" name="code" placeholder="3-digits" type="text"&gt;<br>
+            
+                        &nbsp; &nbsp;  &lt;/div&gt;&lt;br&gt;<br>
+            
+                        &nbsp; &nbsp; &lt;button type="submit" &gt;Submit&lt;/button&gt;<br>
+            
+                        &nbsp; &lt;/section&gt;<br>
+            
+                         &lt;/form&gt;<br>
+                </code>
+
+            <h4>Rendered element:</h4>
+
+            <form>
+                <section id="row">
+                    <h3>Payment Form</h3>
+                    <div class="col-radio">
+
+                        <label>Select Card Type: </label><br>
+                        <input type="radio" name="cardtype" value="Visa" class="rd">Visa
+                        <span class="checkmark"></span>
+                        <input type="radio" name="cardtype" value="Visa" class="rd">Mastercard
+                        <span class="checkmark"></span>
+                    </div><br>
+
+                    <div class="col">
+
+                        <label for="inputcname">Cardholder's name:</label>
+                        <input id="inputcname" placeholder="Margaret LU" type="text">
+
+                        <label for="inputcardnumber">Card Number:</label>
+                        <input id="inputcardnumber" placeholder="16-digits" type="text">
+
+                    </div><br>
+
+
+                    <div class="col">
+
+                        <label for="inputDate">Expiration date:</label>
+                        <input id="inputDate" placeholder="01" type="text">
+
+                        <label for="inputYear">Year:</label>
+                        <input id="inputYear" placeholder="2019" type="text">
+
+                        <label for="code">Security Code:</label>
+                        <input id="code" name="code" placeholder="3-digits" type="text">
+
+                    </div><br>
+
+                    <button type="submit">Submit</button>
+
+                </section>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <section id="citations">
+            <h2>Citations</h2>
+
+            <ul>
+       
+                <li>Logo image, cat images and color plane image were all create by myself.</li>
+        
+                <li>URW Studio.Designer.<strong>Franklin Gothic Medium[font]</strong>. Retrieved from <a href=
+                  "https://www.fonts.com/font/urw/franklin-gothic/medium ">https://www.fonts.com/font/urw/franklin-gothic/medium</a>.
+                </li>
+                <li>Łukasz Dziedzic.Designer.<strong>Lato[font]</strong>. Retrieved from <a href=
+                  "https://fonts.google.com/specimen/Lato ">https://fonts.google.com/specimen/Lato</a>.
+                </li>
+              </ul>
+
+
+        </section>
+        <p>Copyright © 2019 by Wenyue He </p>
+    </footer>
+
+
+</body>
+
+</html>
