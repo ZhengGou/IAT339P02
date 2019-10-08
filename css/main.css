@@ -15,6 +15,12 @@ html{
 body {
   font-family:"Lato",sans-serif;/*lab2:Change the default font.*/
   font-size:16px;
+  background-image: url("../img/bgtexture.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: 100% auto;
+  background-attachment: scroll;
+  background-repeat: repeat-y;
   color:#444442;
   width:100%;
   overflow-x: hidden;
@@ -22,14 +28,27 @@ body {
 }
 
 header{
-    background-color: #FDBB87;
+    background-color: #69524B;
     text-align: center;
     color:white;
     padding-top:60px;
 }
 
 main{
-  margin:0 100px;
+  margin:0 6em;
+  padding:2em;
+ 
+  
+}
+
+main{
+  background:#F9F3E8;
+  background-image: url("../img/bodytexture.png");
+  background-attachment: scroll;
+  background-repeat: repeat;
+  background-size: auto;
+
+  text-align: center;
 }
 .element {
   padding-bottom: 2rem;
@@ -61,14 +80,14 @@ h2 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*https://www.fonts.com/font/urw/franklin-gothic/medium*/
   font-weight: bold;
   margin-top: 1rem;
-  color:#CD9F7B;
+  color:#69524B;
 }
 
 h3 {
-  
+  font-family: 'Bodoni', serif;
   font-style: italic;
   margin-top: 1rem;
-  color:#FF877F;
+  color:#69524B;
 }
 
 h4 {
@@ -111,6 +130,8 @@ code {
   width:60%;
   padding: 0.5rem;
   display: block;
+  margin:0 auto;
+  text-align: left;
 }
 
 
@@ -127,6 +148,7 @@ code {
   width:30%;
   border:2px solid #EFEFEF;
   display:block;
+  margin:1em auto;
 }
 
 
@@ -142,7 +164,7 @@ input[type=radio]{
 }
 
 input[type=radio]:hover{
-  border:1px solid #1abc9c;
+  border:1px solid #64644E;
   background:#eee;
 }
 
@@ -153,15 +175,19 @@ input[type=radio]:active, input[type=radio]:focus{
 
 /*Styling paragraph*/
 .para p{
-  width:70%;
+  width:60%;
   line-height:2rem;
+  margin:0 auto;
+  text-align: left;
 }
 
 /*Styling Numbered Lists 
 reference:https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_ex*/
 ol{
-  list-style-type: lower-roman;
+  list-style-type: upper-roman;
   padding-left:1em;
+  width:60%;
+  margin:0 auto;
 }
 
 
@@ -186,15 +212,7 @@ select{
   width:6em;
 }
   
-button{
-  padding:5px;
-}
-  
-button:hover, button:focus{
-  color:white;
-  background-color:green;
-  border:2px solid black;
-}
+
 
 
 
@@ -204,7 +222,6 @@ button:hover, button:focus{
 /* 
   TEXT ELEMENTS -------------------
 */
-/*lab2:Add a different hover and focus state styling to the in-text link.*/
 #intext{
   font-size:16px;
   font-weight:bold;
@@ -215,12 +232,13 @@ button:hover, button:focus{
 
 #intext:hover,#intext:focus{
   font-size:30px;
+  color:#EDCC92;
   font-weight: bolder;
 }
 
 /*lab2:Add a different hover and focus state styling to the image as a link.*/
 #image{
-  border:2px inset #FF877F;
+  
   width: 300px;
   height:auto;
 }
@@ -244,6 +262,7 @@ button:hover, button:focus{
   max-width:60%;
   background:#CD9F7B;
   justify-content: center;
+  margin:0 auto;
   
 }
 .main_nav a{
@@ -266,7 +285,7 @@ button:hover, button:focus{
   display:inline-block;
   margin:1rem;
   padding: 1rem;
-  border:2px solid #FF877F;
+  background: #F6EDDE;
   border-radius: 5%;
 }
 
@@ -289,18 +308,32 @@ button:hover, button:focus{
   color:blue;
   text-decoration: none;
 }
+
 /* styling form*/
 form{
-  background-color:#FFEBE0;
+  background-image: url("../img/payment_texture.png");
+   
+  height: 100%;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: repeat;
+  
+  
   width:50%;
   height:auto;
   border-radius: 5%;
   padding:0 2rem 1.5rem 2rem;
   line-height: 2em;
+  margin:0 auto;
 }
 
 form input[type=text]{
+  
   border:2px solid #EFEFEF;
+}
+
+form section h3{
+font-size:36px;
 }
 
 .rd{
@@ -312,15 +345,15 @@ button{
   padding:.5rem 2rem;
   border-radius:5%;
   border:none;
-  background-color:#FF877F;
-  color:#444442;
+  color:#F6Edde;
+  background-color: #64644E;
   font-weight:bold;
   box-shadow: 5px 5px 5px #7D7D7D;
 }
 
 button:hover, button:focus{
-  color:#FF877F;
-  background-color: #444442;
+  color:#F6Edde;
+  background-color: #64644E;
 }
 
 #row button[type=submit]{
@@ -334,15 +367,18 @@ table{
 }
 
 .tables{
-  border:2px solid #FF877F;
+  background: #F6EDDE;
+  border: 2px solid #64644E;
+  border-radius: 2%;
   min-width:40em;
   max-width:60%;
-  margin:0 0 2rem 0;
+  margin:0 auto 2rem auto;
   padding:0 1rem;
+
 }
 
 th{
-  border-bottom: 2px solid #FF877F;
+  border-bottom: 2px solid #64644E;
   line-height:2rem;
 }
 
@@ -374,12 +410,16 @@ td i{ /*"X" icon is hidden when in desktop size*/
   float: right;
 }
 
+.banding li{
+  line-height:5rem;
+}
 li{
   line-height:2rem;
 }
 
 ul{
   padding-left:1em;
+  list-style-type: none;
 }
 
 #citations ul{
@@ -393,8 +433,8 @@ ul{
 
 /*footer*/
 footer{
-  background-color: #FDBB87;
-  color:white;
+  background-color: #F6EDDE;
+  color:#64644E;
   text-align: center;
   padding: 2rem 0;
   line-height: 2em;
@@ -412,7 +452,7 @@ footer{
 
 #up i:hover, #up i:focus{
   opacity:1;
-  color:#FF877F;
+  color:#902E3F;
 }
 
 
@@ -484,7 +524,7 @@ footer{
   /* 
     INTERACTIVE ELEMENTS -------------------
   */
-
+  
 
   /*Styling text input field with label*/
   .textElement input[type=text]{
@@ -526,6 +566,7 @@ footer{
 
   .productImage img{
     width:300px;
+    
   }
 
   /* styling form*/
