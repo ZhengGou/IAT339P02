@@ -441,12 +441,20 @@ button{
   background-color: #64644E;
   font-weight:bold;
   box-shadow: 5px 5px 5px #7D7D7D;
+  transition: 0.5s;
 }
 
 button:hover, button:focus{
-  color:#F6Edde;
-  background-color: #64644E;
+  color:black;
+  background-color: #EDCC92;
 }
+
+button:active{
+  box-shadow: none;
+  transform: translate(5px,5px);
+}
+
+
 
 #row button[type=submit]{
   float: right;
