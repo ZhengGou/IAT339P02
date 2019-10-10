@@ -27,11 +27,15 @@ body {
   overflow-y: scroll;
 }
 
+.header{
+  background-color: #69524B;
+  text-align: center;
+  color:white;
+  padding-top:60px;
+}
+
 header{
-    background-color: #69524B;
-    text-align: center;
-    color:white;
-    padding-top:60px;
+   
 }
 
 main{
@@ -58,11 +62,11 @@ main{
 
 }
 
-header>p{
+.header>p{
   line-height: 5em;                                        /*Give space between <h1> and <p>*/
 }
 
-header>img{
+.header>img{
   text-align: center;
 }
 
