@@ -182,7 +182,9 @@ main.nav-open{
 
 
 
-
+figcaption{
+  font-size:20px;
+}
 
 
 /*lab2:Add space between <section> elements.*/
