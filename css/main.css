@@ -101,29 +101,7 @@ section>h3, section>h4 {
 
 
 /* header nav*/
-#top_nav{
-  display:flex;
-  justify-content: center;
-  margin:0px auto;
-  background-color:#CD9F7B;
-}
 
-#top_nav a{
-  font-size:14px;
-  text-decoration:none;
-  padding:1em  2em;
-  display: inline-block;
-  background-color:#CD9F7B; 
-  color:white;
-  transition: background-color .5s linear, color .5s linear;
-}
-
-#top_nav a:hover, #top_nav a:focus{
-  background-color:white;
-  color:black;
-  text-decoration: none;
-
-}
 
 code {
   background-color: #EEE;
