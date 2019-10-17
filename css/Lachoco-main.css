@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Neuzeit-Grotesk", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+    direction: ltr;
+    background-image: url("../img/bgtexture.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: 100% auto;
+    background-attachment: scroll;
+    background-repeat: repeat-y;
+    color: #444442;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* footer */
+
+footer {
+    background-color: #F6EDDE;
+    color: #64644E;
+    text-align: center;
+    padding: 2rem 0;
+    line-height: 2em;
+}
+
+#connect h4 {
+    font-weight: bold;
+}
+
+/* footer icon */
+
+.fab {
+    font-size: 20px;
+    color: var(--choco-color);
+    letter-spacing: .5em;
+}
+
+.fab:active, .fab:hover, .fab:focus {
+    color: var(--red-color);
+}
+
+/* color root */
+
+:root {
+    --choco-color: #69524B;
+    --main-bgcolor: #EDCC92;
+    --green-color: #64644E;
+    --product-bgcolor: #F9F3E8;
+    --red-color: #902e3f;
+}
+
+/* style whole page button*/
+
+button {
+    padding: .5rem 2rem;
+    border-radius: 5%;
+    border: none;
+    color: #F6Edde;
+    background-color: #64644E;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #7D7D7D;
+    transition: 0.5s;
+}
+
+button:hover, button:focus {
+    color: black;
+    background-color: #EDCC92;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
+
+/* begin header css */
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.money {
+    color: white;
+}
+
+.header-information {
+    background: black;
+}
+
+.header-information p {
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+.header-main {
+    background-color: var(--choco-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+/* make cart icon change color */
+
+.header-main-cart-account {
+    font-size: 1.5em;
+}
+
+.header-main-cart-account .fa-cart-plus {
+    color: var(--main-bgcolor);
+    display: inline-block;
+    margin: 0.5em 1em;
+    transition: font-size 0.25s;
+}
+
+.header-main-cart-account .fa-cart-plus:hover {
+    color: var(--product-bgcolor);
+}
+
+/* end header css */
+
+/* beign main css */
+
+main {
+    background: var(--product-bgcolor);
+    background-image: url("../img/bodytexture.png");
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+/* begin styling home page  */
+
+.top-slider {
+    position: relative;
+}
+
+.top-slider-1 {
+    background-image: url("../img/choco_img1.jpg");
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: 100% auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.top-slider-2 {
+    background-image: url("../img/choco_img2.jpg");
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.top-slider-1-subtitle, .top-slider-2-subtitle, .top-slider-3-subtitle {
+    position: absolute;
+    top: 12em;
+    left: 10em;
+}
+
+.top-slider-maintitle {
+    font-size: 52px;
+    font-family: 'Playball', cursive;
+    color: white;
+    font-weight: 400;
+    letter-spacing: .25em;
+}
+
+.top-slider-para {
+    font-size: 16px;
+    font-family: 'Playball', cursive;
+    color: var(--main-bgcolor);
+    font-weight: 400;
+    letter-spacing: .25em;
+    padding: 1.5em 0;
+    position: relative;
+}
+
+.top-slider-para:after {
+    content: '';
+    position: absolute;
+    width: 12%;
+    left: 0;
+    bottom: .5em;
+    border-bottom: 3px solid var(--product-bgcolor);
+}
+
+.top-slider-1-subtitle>a, .top-slider-2-subtitle>a, .top-slider-3-subtitle>a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-slider-link {
+    font-weight: 400;
+    letter-spacing: .25em;
+}
+
+.context-1 {
+    width: 50%;
+    margin: 5rem auto;
+    color: #fff;
+    background-color: #000;
+    padding: 3rem 2rem;
+}
+
+.context-2 {
+    color: #000;
+}
+
+
+
+
+/* events */
+.events {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.all-events {
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: center;
+    margin: 2rem;
+    border: 2px solid #000;
+    border-radius: 3%;
+    padding: 2rem;
+    opacity: 1;
+    transition: opacity .5s linear;
+    text-decoration: none;
+    color:var(--choco-color);
+}
+
+.all-events:hover, .all-events:active, .all-events:focus {
+    opacity: .25;
+}
+
+.context h2 {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.context p {
+    width: 75%;
+    margin: 0 auto;
+    line-height: 1.75rem;
+    text-align: justify;
+}
+
+/* end styling home page  */
+
+/* begin  styling la_checkout page */
+
+/*Styling cart items and checkout button*/
+
+table {
+    width: 100%;
+}
+
+.tables {
+    background: #F6EDDE;
+    border: 2px solid #64644E;
+    border-radius: 2%;
+    min-width: 40em;
+    max-width: 60%;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+}
+
+th {
+    border-bottom: 2px solid #64644E;
+    line-height: 2rem;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    width: auto;
+    padding-top: 3rem;
+}
+
+td img {
+    width: 200px;
+    height: auto;
+}
+
+td>button {
+    /*when in desktop size, "Remove" button will be displayed*/
+    margin: 0 auto;
+    display: block;
+}
+
+td i {
+    /*"X" icon is hidden when in desktop size*/
+    display: none !important;
+    /*icon still visible when display:none, add !important to override the code*/
+}
+
+#checkoutBtn {
+    float: right;
+}
+
+/* styling form*/
+
+form {
+    background-image: url("../img/payment_texture.png");
+    height: 100%;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: repeat;
+    width: 60%;
+    height: auto;
+    padding: 3rem 2rem 5rem 2rem;
+    line-height: 2em;
+    margin: 5rem auto;
+    text-align: center;
+    line-height: 2rem;
+    border-radius:3%;
+}
+
+form h3 {
+    line-height: 2rem;
+    padding-bottom: 2rem;
+}
+
+form input[type=text] {
+    width: 50%;
+    border: 2px solid #EFEFEF;
+    display: block;
+    margin: 0 auto .5rem auto;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form section h3 {
+    font-size: 36px;
+    font-family: 'Playball', cursive;
+}
+
+.col-radio, .col {
+    margin-bottom: 2rem;
+}
+
+.col label, .col input, .col-radio label {
+    display: block;
+    margin: 0 auto;
+}
+
+.rd {
+    margin: 0 1rem;
+}
+
+#row button[type=submit] {
+    float: right;
+}
+
+/* end  styling la_checkout page */
+
+
+/* begin styling store page */
+.all-products{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    padding:0 2rem;
+}
+
+.choco-Products{
+    font-size:24px;
+    text-align: center;
+    width:25%;
+    padding-top:2rem;
+    margin:0 auto 2rem auto;
+    border-bottom: 2px solid var(--green-color);
+}
+
+.productImage{                                     /*Styling product image*/
+    flex-wrap:wrap;
+    margin:1rem;
+    padding: 1rem;
+    background: #F6EDDE;
+    border-radius: 5%;
+  }
+  
+  .productImage img{
+    width:100%;
+    height:auto;
+    opacity: 0.95;
+      -moz-box-shadow: 0 0 40px #ccc;
+      -webkit-box-shadow: 0 0 40px #ccc;
+      box-shadow: 0 0 40px #ccc;
+  }
+  
+  .productImage a{
+    font-size:0.9rem;
+    color:grey;
+    text-decoration: underline;
+  }
+  
+  .productImage a:hover, .productImage a:focus{
+    color:blue;
+    text-decoration: none;
+  }
+/* end styling store page */
+@media screen and (max-width:480px) {
+    header {
+        flex-direction: column;
+    }
+}

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cart</title>
     <!--Product/Service Listing-->
@@ -12,22 +13,69 @@
 
 <body>
 
-    <header class="header">
-            <figure><img src="img/nlogo.png" alt="" width="300" /></figure>
-            <h1> La Choco Style Guide</h1>
+    <header>
+           
+    <div class = "move">
+            <div class = "menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="overlay"></div>
         
-            <p> La Choco, we sell the best taste.</p>
-
-
-        <nav id="top_nav">
-            <a href="index.html#interactive_elements">Interactive Elements</a>
-            <a href="index.html#text_elements">Text Elements</a>
-            <a href="index.html#combined_elements">Combined Elements</a>
-            <a href="product_listing.html">Product Listing Template</a>
-            <a href="checkout.html">Checkout Template</a>
-            <a href="#citations">Citations</a>
-        </nav>
+            <nav id="top_nav">
+              <ul class="nav-list">
+                <li class = "nav-item">
+                    <a href="#interactive_elements" class = "nav-link">Interactive Elements</a>
+                </li>
+        
+                <li class = "nav-item">
+                    <a href="#text_elements" class = "nav-link">Text Elements</a>
+                </li>
+        
+                <li class = "nav-item">
+                    <a href="#combined_elements" class = "nav-link">Combined Elements</a>
+                </li>
+        
+                <li class = "nav-item">
+                    <a href="product_listing.html" class = "nav-link">Product Listing Template</a>
+                </li>
+        
+                <li class = "nav-item">
+                    <a href="checkout.html" class = "nav-link">Checkout Template</a>
+                </li>
+        
+                <li class = "nav-item">
+                    <a href="#citations" class = "nav-link">Citations</a>
+                </li>
+                <li class = "nav-item">
+                    <div class = "dropdown">
+                        <a href="#" class = "nav-link dropdown-toggle" >Services</a>
+                        <ul class="nav-list dropdown-content" id = "myDropdown">
+                          <li class="nav-item">
+                            <a href="index.html" class = "nav-link">Homepage</a>
+                          </li>
+        
+                          <li class="nav-item">
+                              <a href="#" class = "nav-link">Number 2</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="#" class = "nav-link">Number 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+              </ul>
+            </nav>
+            </div>
+            <div class="header" id="topOfThePage">
+                <figure><img src="img/nlogo.png" alt="" width="300" /></figure>
+                <h1> La Choco Style Guide</h1>
+            
+                <p> La Choco, we sell the best taste.</p>
+            </div>
     </header>
+    <script src="main.js"></script>
 
     <main>
         <!--Checkout Cart-->
@@ -38,7 +86,7 @@
             &lt;table&gt;<br>
             &nbsp; &lt;tr&gt;<br>
             &nbsp;&nbsp;&lt;th&gt;No.&lt;/th&gt;<br>
-            &nbsp;&nbsp;&lt;th&gt;Animals&lt;/th&gt;<br>
+            &nbsp;&nbsp;&lt;th&gt;Items&lt;/th&gt;<br>
             &nbsp;&nbsp;&lt;th&gt;Price ($)&lt;/th&gt;<br>
             &nbsp;&nbsp;&lt;th&gt; &lt;/th&gt;<br>
             &nbsp;&lt;/tr&gt;<br>
@@ -87,7 +135,7 @@
               <table>
                 <tr>
                   <th>No.</th>
-                  <th>Animals</th>
+                  <th>Items</th>
                   <th>Price ($)</th>
                   <th> </th>
                 </tr>
