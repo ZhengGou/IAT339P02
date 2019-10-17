@@ -3,15 +3,66 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
+    
     <title>La Choco</title>
 
     <link href="css/Lachoco-main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 </head>
 
 <body>
     <header>
+            <div class = "move">
+                    <div class = "menu-toggle">
+                        <i class="fas fa-bars toggleA"></i>
+                        <i class="fas fa-times toggleB"></i>
+                    </div>
+                    <div class="overlay"></div>
+                
+                    <nav id="top_nav">
+                      <ul class="nav-list">
+                        <li class = "nav-item">
+                            <a href="home.html" class = "nav-link">Homepage</a>
+                        </li>
+                
+                        <li class = "nav-item">
+                            <a href="#" class = "nav-link">Black Chocolate</a>
+                        </li>
+                
+                        <li class = "nav-item">
+                            <a href="#" class = "nav-link">Milk Chocolate</a>
+                        </li>
+                
+                        <li class = "nav-item">
+                            <a href="la_checkout.html" class = "nav-link">Check Out</a>
+                        </li>
+                
+                        <li class = "nav-item">
+                            <a href="la_store.html" class = "nav-link">What We Offer</a>
+                        </li>
+                
+                        <li class = "nav-item">
+                            <div class = "dropdown">
+                                <a href="#" class = "nav-link dropdown-toggle">Our Events</a>
+                                <ul class="nav-list dropdown-content" id = "myDropdown">
+                                  <li class="nav-item">
+                                    <a href="la_events_1.html" class = "nav-link">EventOne</a>
+                                  </li>
+                
+                                  <li class="nav-item">
+                                      <a href="la_event_1.html" class = "nav-link">EventTwo</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                      </ul>
+                    </nav>
+                    </div>
         <div class="header-information">
             <p>Free domestic shipping on orders over $ 50 .</p>
         </div>
@@ -25,8 +76,8 @@
 
         </div>
     </header>
-
-
+    <script src="main.js"></script>
+    <div class="special">
 
     <main>
         <!-- top-slider -->
@@ -95,7 +146,8 @@
         <section class="context context-2">
             <h2>Events</h2>
             <div class="events">
-                <a href="la_events.html" class="all-events">     
+                <div class="borderline">
+                <a href="la_events.html">     
                     <div class="events-num">
                         <h3>01</h3>
                         <h3>Making chocolate</h3>
@@ -109,8 +161,10 @@
                             to make your own small batch of rustic chocolate and cocoa nibs. </p>
                     </div>
                 </a>
+                </div>
 
-                <a href="la_events.html" class="all-events">
+                <div class="borderline">
+                <a href="la_events.html">
                     <div class="events-num">
                         <h3>02</h3>
                         <h3>Factory Tours</h3>
@@ -124,6 +178,7 @@
                             production process from cacao bean to finished chocolate bar.</p>
                     </div>
                 </a>
+                </div>
             </div>
 
 
@@ -143,6 +198,7 @@
         </section>
         <p>Copyright © 2019 by Wenyue He and Ethan Zhu, La choco company.All rights reserved. </p>
     </footer>
+    </div>
 
 
 </body>
