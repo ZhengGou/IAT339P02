@@ -713,8 +713,13 @@ form section h3 {
     .context-1 {
         margin-top:-20rem;
     }
+    td img{
+        width:100px;
+    }
 
-}
+    #checkoutBtn {
+        
+    }
 /* end styling store page
 @media screen and (max-width:480px) {
     header {
