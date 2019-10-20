@@ -29,31 +29,23 @@
                         </li>
                 
                         <li class = "nav-item">
-                            <a href="#" class = "nav-link">Black Chocolate</a>
+                            <a href="home.html#aboutus" class = "nav-link">About Us</a>
                         </li>
-                
+
                         <li class = "nav-item">
-                            <a href="#" class = "nav-link">Milk Chocolate</a>
-                        </li>
-                
-                        <li class = "nav-item">
-                            <a href="la_checkout.html" class = "nav-link">Check Out</a>
-                        </li>
-                
-                        <li class = "nav-item">
-                            <a href="la_store.html" class = "nav-link">What We Offer</a>
+                            <a href="la_store.html" class = "nav-link">Store</a>
                         </li>
                 
                         <li class = "nav-item">
                             <div class = "dropdown">
-                                <a href="#" class = "nav-link dropdown-toggle" >Our Events</a>
+                                <a href="#" class = "nav-link dropdown-toggle" >Events</a>
                                 <ul class="nav-list dropdown-content" id = "myDropdown">
                                   <li class="nav-item">
-                                    <a href="la_events_1.html" class = "nav-link">EventOne</a>
+                                    <a href="home.html#event" class = "nav-link">EventOne</a>
                                   </li>
                 
                                   <li class="nav-item">
-                                      <a href="la_events_1.html" class = "nav-link">EventTwo</a>
+                                      <a href="home.html#event" class = "nav-link">EventTwo</a>
                                     </li>
                                 </ul>
                             </div>
@@ -66,7 +58,7 @@
         </div>
 
         <div class="header-main">
-            <div class="money">CAD</div>
+            
             <figure><img src="img/nlogo.png" id="logo" alt="LaChoco logo" /></figure>
             <div class="header-main-cart-account">
                 <a href="la_checkout.html"><i class="fa fa-cart-plus"></i></a>
@@ -78,17 +70,32 @@
     <div class="special">
     <main>
         
-        <div class="productImage">
+        <div class="productImage-detail">
             <figure>
                 <img src="img/chocobar_maya70.png" alt="Maya70%chocolate">
             </figure>
+            <div class="textbox">
             <h4>70% Maya</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                   dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                   </div>
         </div>
+
+        <div class="review">
+
+                <form id="f" name="f" action="#" method="post" onsubmit="return checkform(this)">
+    
+                    <h3 class="review-title"> Share your Comments </h3>
+                    <label for="for_review">Your review: </label>
+                    <textarea name="yourmessage" cols="50" rows="10"></textarea>
+    
+                    <a href="#"><button type="button">Send</button></ a>
+                </form>
+    
+            </div>
     </main>
 
     <footer>
