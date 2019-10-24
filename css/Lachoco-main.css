@@ -275,23 +275,54 @@ main {
 
 /* begin styling home page  */
 
-.top-slider {
-    position: relative;
+.nextSlide i{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color:#fff;
+    font-size: 2rem;
+    opacity:.5;
+    z-index:100;
+    padding:1rem;
+    transition:transform .5s;
 }
 
-.top-slider-1 {
+.prevSlide i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color:#fff;
+    font-size: 2rem;
+    opacity:.5;
+    z-index:1000;
+    padding:1rem;
+    transition:transform .5s;
+}
+
+.nextSlide i:hover, .nextSlide i:focus, .nextSlide i:active, .prevSlide i:hover, .prevSlide i:focus, .prevSlide i:active{
+    opacity:1;
+    transform: scale(1.2);
+}
+
+.top-slider {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.top-slider-1:nth-child(1) {
     background-image: url("../img/choco_img1.jpg");
     background-repeat: no-repeat;
     height: 600px;
     background-size: 100% auto;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
 }
 
-.top-slider-2 {
+.top-slider-1:nth-child(2) {
     background-image: url("../img/choco_img2.jpg");
     background-repeat: no-repeat;
     height: 600px;
@@ -302,6 +333,18 @@ main {
     width: 100%;
     z-index: 1;
 }
+
+/* .top-slider-1:nth-child(3) {
+    background-image: url("../img/choco_img3.jpg");
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+} */
 
 .top-slider-1-subtitle, .top-slider-2-subtitle, .top-slider-3-subtitle {
     position: absolute;
@@ -345,6 +388,7 @@ main {
     font-weight: 400;
     letter-spacing: .25em;
 }
+
 
 /*Styling about us and events */
 
