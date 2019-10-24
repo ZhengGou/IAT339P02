@@ -68,109 +68,70 @@
     </header>
     <script src="main.js"></script>
     <main>
-        <br> <!--temporary, should be fixed in the future-->
-        <div class="shopping">
-        <section class="tables">
+       
+        
+        <div class="tables">
+            <div class="shopping">
+            
+                <form>
+                    <section id="row">
+                        <h3>Payment Form</h3>
+                        <div class="col-radio">
+    
+                            <label>Select Card Type: </label><br>
+                            <input type="radio" name="cardtype" value="Visa" class="rd">Visa
+                            <span class="checkmark"></span>
+                            <input type="radio" name="cardtype" value="Visa" class="rd">Mastercard
+                            <span class="checkmark"></span>
+                        </div><br>
+    
+                        <div class="col">
+    
+                            <label for="inputcname">Cardholder's name:</label>
+                            <input id="inputcname" placeholder="Margaret LU" type="text">
+    
+                            <label for="inputcardnumber">Card Number:</label>
+                            <input id="inputcardnumber" placeholder="16-digits" type="text">
+    
+                        </div><br>
+    
+    
+                        <div class="col">
+    
+                            <label for="inputDate">Expiration date:</label>
+                            <input id="inputDate" placeholder="01" type="text">
+    
+                            <label for="inputYear">Year:</label>
+                            <input id="inputYear" placeholder="2019" type="text">
+    
+                            <label for="code">Security Code:</label>
+                            <input id="code" name="code" placeholder="3-digits" type="text">
+    
+                        </div><br>
+    
+                        <button type="submit">Submit</button>
+    
+                    </section>
+    
+                </form>
+            </div>
 
-            <table>
-                <tr>
-                    <th>No.</th>
-                    <th>Items</th>
-                    <th>Price ($)</th>
-                    <th> </th>
-                </tr>
-                <tr>
-                    <td>1.</td>
-                    <td>
-                        <figure><img class = "co" src="img/chocobar_maya70.png" alt="product">
-                            <figcaption>70% Maya</figcaption>
-                        </figure>
 
-                    </td>
-                    <td>$5.00</td>
-                    <td  class = "btnco">
-                        <button type="button">Remove</button>
-                        <i class="fa fa-close"></i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>2.</td>
-                    <td>
-                        <figure><img class = "co"src="img/chocobar_wanpu70.png" alt="product">
-                            <figcaption>70% Wanpu</figcaption>
-                        </figure>
-
-                    </td>
-                    <td>$7.00</td>
-                    <td  class = "btnco">
-                        <button type="button">Remove</button>
-                        <i class="fa fa-close"></i>
-                        <!--Remove button will be change to "X" icon when in mobile size-->
-                    </td>
-                </tr>
-
-                <tr>
-                    <td> </td>
-                    <td><span>Total:</span></td>
-                    <td>$12.00</td>
-                    <td> </td>
-                </tr>
-            </table><br>
-
-            <section id="checkoutBtn">
+            <!-- <section id="checkoutBtn">
                 <a href="#row"><button type="button">Proceed To Checkout</button></a>
-            </section>
+            </section> -->
+            <div class="paymentinfo">
+                <h1>Order Details</h1>
+                <h2>Subtotal</h2>
+                <h2>Shipping</h2>
+                <h2>GST</h2>
+                <h2>PST</h2>
+                <h1>Total</h1>
+            </div>
 
-        </section>
         </div>
-        <div class="paymentinfo">
-            <h1>Hello World!</h1>
-            <p>Hi!</p>
 
-        </div>
-
-        <form>
-            <section id="row">
-                <h3>Payment Form</h3>
-                <div class="col-radio">
-
-                    <label>Select Card Type: </label>
-                    <input type="radio" name="cardtype" value="Visa" class="rd">Visa
-                    <span class="checkmark"></span>
-                    <input type="radio" name="cardtype" value="Visa" class="rd">Mastercard
-                    <span class="checkmark"></span>
-                </div>
-
-                <div class="col">
-
-                    <label for="inputcname">Cardholder's name:</label>
-                    <input id="inputcname" placeholder="Margaret LU" type="text">
-
-                    <label for="inputcardnumber">Card Number:</label>
-                    <input id="inputcardnumber" placeholder="16-digits" type="text" maxlength="16">
-
-                </div>
-
-
-                <div class="col">
-
-                    <label for="inputDate">Expiration date:</label>
-                    <input id="inputDate" placeholder="01" type="text" maxlength="2">
-
-                    <label for="inputYear">Year:</label>
-                    <input id="inputYear" placeholder="2019" type="text" maxlength="4">
-
-                    <label for="code">Security Code:</label>
-                    <input id="code" name="code" placeholder="3-digits" type="text" maxlength="3">
-
-                </div><br>
-
-                <a href=la_inforbulid.html"><button type="submit">Submit</button></a>
-
-            </section>
-
-        </form><br>
+<br>
 
     </main>
 

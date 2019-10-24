@@ -29,9 +29,10 @@ header.nav-open .fa-times {
     margin-top: 1.5rem;
 }
 
-header.nav-open .fa-bars {
+header.nav-open .fa-align-right {
     display: none;
 }
+
 
 #top_nav {
     position: absolute;
@@ -171,21 +172,35 @@ footer * {
 }
 
 /* style whole page button*/
-
-button {
-    padding: .5rem 2rem;
-    border-radius: 5%;
+/* .submitBtn{
+    padding:12px;
+    cursor: pointer;
     border: none;
     color: #F6Edde;
     background-color: #64644E;
     font-weight: bold;
-    box-shadow: 5px 5px 5px #7D7D7D;
-    transition: 0.5s;
+    width: 100%;
+    transition: 0.8s;
+} */
+
+.submitBtn:hover{
+    color:black;
+    background-color:var(--main-bgcolor);
 }
 
-button:active {
-    box-shadow: none;
-    transform: translate(5px, 5px);
+button {
+    padding: .5rem 2rem;
+
+    border: none;
+    color: #F6Edde;
+    background-color: #64644E;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+button:hover {
+    color:black;
+    background-color:var(--main-bgcolor);
 }
 
 /* begin header css */
@@ -197,6 +212,9 @@ button:active {
 
 .header-information {
     background: black;
+}
+.fa-window-close{
+    color: var(--main-bgcolor);
 }
 
 .header-information p {
@@ -226,8 +244,9 @@ button:active {
 .header-main-cart-account .fa-cart-plus {
     color: var(--main-bgcolor);
     display: inline-block;
-    margin: 0.5em 1em;
+    margin: 0.25em 1em;
     transition: font-size 0.25s;
+    font-size: 2rem;
 }
 
 .header-main-cart-account .fa-cart-plus:hover {
@@ -502,45 +521,23 @@ table {
 }
 
 .tables {
-    background: #F6EDDE;
-    border: 2px solid #64644E;
-    border-radius: 2%;
+    display: flex;
+}
+.shopping{
+    flex-wrap: wrap;
+    margin:0;
     min-width: 40em;
     max-width: 60%;
-    margin: 0 auto 2rem auto;
-    padding: 0 1rem;
+    width:60%;
+}
+.paymentinfo{
+    background-color: whitesmoke;
+    border-left:1px solid black;
+    flex-wrap: wrap;
+    width:40%;
+
 }
 
-th {
-    border-bottom: 2px solid #64644E;
-    line-height: 2rem;
-}
-
-tr {
-    text-align: center;
-}
-
-td {
-    width: auto;
-    padding-top: 3rem;
-}
-
-td img {
-    width: 200px;
-    height: auto;
-}
-
-td>button {
-    /*when in desktop size, "Remove" button will be displayed*/
-    margin: 0 auto;
-    display: block;
-}
-
-td i {
-    /*"X" icon is hidden when in desktop size*/
-    display: none !important;
-    /*icon still visible when display:none, add !important to override the code*/
-}
 
 #checkoutBtn {
     margin-top: 2rem;
@@ -549,44 +546,101 @@ td i {
 }
 
 /* styling form*/
-
-form {
-    background-image: url("../img/payment_texture.png");
-    height: 100%;
-    background-position: center;
-    background-size: 100% auto;
-    background-repeat: repeat;
-    width: 60%;
-    height: auto;
-    padding: 3rem 2rem 5rem 2rem;
-    line-height: 2em;
-    margin: 5rem auto;
-    margin-top: 10rem;
+main>.maintitle{
     text-align: center;
-    line-height: 2rem;
-    border-radius: 3%;
+    font-size: 2rem;
+    padding-top:2rem;
+}
+form{
+    font-size:1.2rem;
+    padding:1.2rem;
 }
 
-form h3 {
-    line-height: 2rem;
-    padding-bottom: 2rem;
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    margin-bottom: 1rem;
 }
 
-form input[type=text] {
-    width: 50%;
-    border: 2px solid #EFEFEF;
+.col-25{
+    -ms-flex:25%;
+    flex: 25%; 
+    font-size:1.2rem;
+}
+.col-25 p{
+    margin-top:.5rem;
+    margin-bottom: .5rem;;
+}
+.col-25 h4{
+    margin-top:.5rem;
+    margin-bottom: .5rem;;
+}
+.col-50{
+    -ms-flex:50%;
+    flex: 50%;
+
+}
+
+.col-75{
+    -ms-flex:75%;
+    flex: 75%;
+}
+
+.col-25, .col-50, .col-75{
+    padding:0 16px;
+}
+
+.container{
+    background-color: #cfcccc85;
+    padding:3px 18px 13px 18px;
+    border: 1ox solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+label{
+    margin-bottom: 10px;
     display: block;
-    margin: 0 auto .5rem auto;
-    padding: .5rem 1rem;
-    border-radius: 5px;
-    box-sizing: border-box;
+}
+.icon-container{
+    margin-bottom: 10px;
+    padding:7px 0;
+    font-size: 24px;
 }
 
-form section h3 {
-    font-size: 36px;
-    font-family: 'Playball', cursive;
+.submitBtn{
+    padding:12px;
+    cursor: pointer;
+    border: none;
+    color: #F6Edde;
+    background-color: #64644E;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.8s;
 }
 
+.submitBtn:hover{
+    color:black;
+    background-color:var(--main-bgcolor);
+}
+
+.col-25 a{
+    border: 1px solid lightgrey;
+}
+
+span.price{
+    float: right;
+    color:grey;
+}
 .col-radio, .col {
     margin-bottom: 2rem;
 }
@@ -603,6 +657,113 @@ form section h3 {
 #row button[type=submit] {
     float: right;
 }
+
+table{
+    width:70%;
+    margin:auto;
+    height:auto;
+  }
+  
+  table tr th{
+    margin:auto;
+    min-width:2em;
+    max-width: 10em;
+    height:auto;
+    text-align: center;
+  }
+  
+  table tr td{
+    margin:1em 0em;
+  }
+  
+  table tr .wrapping{
+    display:flex;
+    margin-left: 38%;
+  }
+  
+  table tr td img{
+    width:20%;
+    height:20%;
+    margin:auto 1em;
+  }
+  
+  table tr td>p{
+    flex-wrap: wrap;
+    margin:auto 1em;
+    font-family: "Garamond", serif;
+    font-size: 1.2em;
+  }
+  
+  td select{
+    width:4em;
+  }
+  
+  td select{
+    margin-top:1.25em;
+
+  }
+  
+  td button{
+    margin: auto;
+    letter-spacing: .1em;
+      font-size: .9em;
+      text-transform: capitalize;
+      background: none;
+      font-weight: 600;
+      color:#210e03;
+      border:1.5px solid #e5bf76;
+      padding:1em .5em;
+      transition:background-color 0.25s;
+      margin:0 1em;
+  }
+  
+  td button:hover, td button:active, td button:focus{
+    text-decoration: none;
+      border:1.5px solid #aa0000;
+      color: #990000;
+  }
+  
+  .centeringObject{
+    margin:auto;
+    text-align: center;
+     padding:2em;
+  }
+  
+  .spacing {
+    padding:80px;
+    padding-top: 0px;
+  }
+  
+  .spacingSection{
+    /*position: relative;*/
+    border: 1px solid black;
+
+    width: 100%;
+    padding:2em;
+  }
+  
+  td>span{
+    font-size:1.2em;
+    font-weight:bold;
+    padding-right:1em;
+  }
+  
+  .rightAlignment{
+    text-align: right;
+  }
+  
+  .proceedButtonSpacing{
+    width:70%;
+    margin:1em auto;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .checkoutall{
+      margin:0 2rem;
+      margin-bottom: 5rem;
+  }
+
 
 /* end  styling la_checkout page */
 
@@ -721,11 +882,25 @@ form section h3 {
         display: block;
         padding: 0 2rem;
     }
-    form {
-        width: 80%;
+
+    .spacing {
+        padding:2rem;
+      }
+    
+    .proceedButtonSpacing{
+        width:70%;
+        margin-top: 2rem;
+      }
+
+      .checkoutall{
+        margin:0 1rem;
     }
-    form input[type=text] {
-        width: 60%;
+
+    .col-25 p{
+        font-size: 0.5rem;
+    }
+    .col-25, .col-50, .col-75{
+        padding:0 8px;
     }
 }
 
@@ -792,12 +967,48 @@ form section h3 {
         width: 80%;
         padding: 0 2rem;
     }
-    form {
-        width: 90%;
+
+    .row {
+        flex-direction: column-reverse;
     }
-    form input[type=text] {
-        width: 80%;
+    .col-25{
+        margin-bottom: 20px;
     }
+    .col-25 p{
+        font-size: 1rem;
+    }
+    .spacing {
+        padding:5px;
+      }
+
+      table tr td{
+        margin:3em 0em;
+      }
+      table img{
+          display: none;
+      }
+
+      .spacingSection{
+          padding: .5rem;
+      }
+      table tr .wrapping{
+
+        margin-left: 15%;
+      }
+
+      .header-main-cart-account {
+        
+        margin-right: 0;
+    }
+    .proceedButtonSpacing{
+        width:60%;
+        margin-top: 1rem;
+      }
+
+      .checkoutall{
+        margin:0;
+    }
+    
 }
 
 @media screen and (max-width:480px) {
