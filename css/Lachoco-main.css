@@ -86,11 +86,12 @@ header.nav-open .move {
 .nav-item::before {
     content: '';
     position: absolute;
-    width: 100%;
+    margin-left:30%;
+    width: 40%;
     height: 1px;
     left: 0;
     bottom: 0;
-    background: linear-gradient(to right, #fa6c98, purple);
+    background: var(--choco-color);
 }
 
 .dropdown .nav-item::before {
@@ -834,7 +835,8 @@ table{
 .productImage-detail{
     display: flex;
     text-align: center;
-    padding-top:2rem;
+    padding-top:5rem;
+    padding-bottom: 5rem;
 }
 .productImage-detail img{
     margin:1rem;
@@ -845,20 +847,34 @@ table{
     flex-wrap: wrap;
   }
 
+.textandreview{
+    flex-wrap: wrap;
+    width: 45%;
+}
+
 .textbox {
     font-size: 1.2rem;
-    flex-wrap: wrap;
     padding: 2rem;
-    padding-left: 10%;
-    padding-top:15%;
-    width: 50%;
+    padding-top:2rem;
+    padding-bottom: 0;
     text-align: left;
 }
 
+.textbox p{
+    font-size: 1rem;
+}
+.textbox h3{
+    font-size:2rem;
+    padding-bottom: 2rem;
+}
+
+textarea{
+    width:100%
+}
 .productdetailh2{
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
-    padding-top:5rem;
+
 }
 
 /* event_image */
@@ -929,8 +945,9 @@ table{
 }
 
 .review{
-    padding-top:3rem;
-    text-align: center;
+    text-align: left;
+    padding-top:1rem;
+    
 }
 /*Responsive*/
 
@@ -1014,6 +1031,23 @@ table{
     .borderline{
         margin:.5rem;
         width: auto;
+    }
+    .productImage-detail img{
+        margin:1rem;
+        padding: 1rem;
+        border-radius: 5%;
+        width:80%;
+        flex-wrap: wrap;
+      }
+    
+    .textbox {
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+        padding: 2rem;
+        padding-left: 10%;
+        padding-top:15%;
+        width: 80%;
+        text-align: left;
     }
 }
 
