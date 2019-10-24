@@ -1032,22 +1032,15 @@ textarea{
         margin:.5rem;
         width: auto;
     }
+
     .productImage-detail img{
-        margin:1rem;
-        padding: 1rem;
-        border-radius: 5%;
-        width:80%;
-        flex-wrap: wrap;
+        width:50%;
+
       }
     
-    .textbox {
-        font-size: 1.2rem;
-        flex-wrap: wrap;
-        padding: 2rem;
-        padding-left: 10%;
-        padding-top:15%;
-        width: 80%;
-        text-align: left;
+    .textandreview{
+
+        width: 95%;
     }
 }
 
@@ -1164,6 +1157,10 @@ textarea{
     }
     .events-context{
         display: none;
+    }
+
+    .productImage-detail{
+        display: block;
     }
 }
 
