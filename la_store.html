@@ -28,13 +28,14 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="home.html#aboutus" class="nav-link">About Us</a>
+                        <a href="la_store.html" class="nav-link">About Us</a>
                     </li>
 
-
-
                     <li class="nav-item">
-                        <a href="#" class="nav-link dropdown-toggle">Events</a>
+                        <a href="la_events_1.html" class="nav-link dropdown-toggle">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="la_contactus.html" class="nav-link ">Contact Us</a>
                     </li>
                 </ul>
 
@@ -47,7 +48,9 @@
 
         <div class="header-main">
 
-            <figure><img src="img/nlogo.png" id="logo" alt="LaChoco logo" /></figure>
+            <a href="home.html">
+                <figure><img src="img/nlogo.png" id="logo" alt="LaChoco logo" /></figure>
+            </a>
             <div class="header-main-cart-account">
                 <a href="la_checkoutpage.html"><i class="fa fa-cart-plus"></i></a>
             </div>
@@ -55,8 +58,68 @@
         </div>
     </header>
     <script src="main.js"></script>
-    <main>
-        <h3 class="choco-Products">Chocolates</h3>
+
+    <main id="la-store">
+        <section class="typesofproduct">
+            <ul>
+                <li><a href="#darkchoco">Dark Chocolate</a></li>
+                <li><a href="#whitechoco">White Chocolate</a></li>
+                <li><a href="#giftset">Gift Set</a></li>
+            </ul>
+        </section>
+
+        <section class="allProducts">
+            <h4 id="darkchoco"><span>Chocolate</span> &bull; Dark Chocolate</h4>
+            <section class="listRow">
+                <div>
+                    <img src="img/chocobar_maya70.png" alt="Maya70%chocolate">
+                    <p class="chocoName">70% Maya Mountain, Belize</p>
+                    <a href="la_checkoutpage.html" class="addbtn2"><span>$5</span>Add To Cart</a>
+                </div>
+                <div>
+                    <img src="img/chocobar_wanpu70.png" alt="Wanpu70%chocolate">
+                    <p class="chocoName">70% Wanpu, Honduras</p>
+                    <a href="la_checkoutpage.html" class="addbtn2"><span>$12</span>Add To Cart </a>
+                </div>
+                <div>
+                    <img src="img/chocobar_cv100.png" alt="cv100%chocolate">
+                    <p class="chocoName">100% Camino Verde,Ecuador</p>
+                    <a href="la_checkoutpage.html" class="addbtn2"><span>$15</span>Add To Cart</a>
+                </div>
+            </section>
+
+            <h4 id="whitechoco"><span>Chocolate</span> &bull; White Chocolate</h4>
+            <section class="listRow">
+                <div>
+                    <img src="img/chocobar_kokoa70.png" alt="Kokoa70%chocolate">
+                    <p class="chocoName">70% Kokoa Kamili,Tanzania</p>
+                    <a href="la_checkoutpage.html" class="addbtn2"><span>$8</span>Add To Cart</a>
+                </div>
+                <div>
+                    <img src="img/chocobar_bentre70.png" alt="Bentre70%chocolate">
+                    <p class="chocoName">70% Bentre,Vietnam</p>
+                    <a href="la_checkoutpage.html" class="addbtn2"><span>$10</span>Add To Cart</a>
+                </div>
+                <div>
+                    <img src="img/chocobar_zorzal70.png" alt="Zorza70%chocolate">
+                    <p class="chocoName">70% Zorzal comunitario,D,R</p>
+                    <a href="la_checkoutpage.html" class="addbtn2"><span>$12</span>Add To Cart</a>
+                </div>
+            </section>
+
+            <h4 id="giftset"><span>Chocolate</span> &bull; Gift Set</h4>
+            <section class="listRow">
+                <div>
+                    <img src="img/barkgiftset1.png" alt="barkgiftset1">
+                    <p class="chocoName">2019 Gift set</p>
+                    <a href="la_checkoutpage.html" class="addbtn2"><span>$60</span>Add To Cart</a>
+                </div>
+                
+            </section>
+        </section>
+
+
+        <!-- <h3 class="choco-Products">Chocolates</h3>
         <section class="all-products">
 
             <div class="productImage">
@@ -79,32 +142,9 @@
                 </figure>
                 <h4>70% Zorzal</h4>
                 <a href="la_detail.html"> More information →</a>
-            </div>
+            </div> -->
 
-
-            <div class="productImage">
-                <figure>
-                    <img src="img/chocobar_maya70.png" alt="Maya70%chocolate">
-                </figure>
-                <h4>70% Maya</h4>
-                <a href="la_detail.html"> More information →</a>
-            </div>
-            <div class="productImage">
-                <figure>
-                    <img src="img/chocobar_wanpu70.png" alt="Wanpu70%chocolate">
-                </figure>
-                <h4>70% Wanpu</h4>
-                <a href="la_detail.html"> More information →</a>
-            </div>
-            <div class="productImage">
-                <figure>
-                    <img src="img/chocobar_zorzal70.png" alt="Zorza70%chocolate">
-                </figure>
-                <h4>70% Zorzal</h4>
-                <a href="la_detail.html"> More information →</a>
-            </div>
-
-        </section>
+        <!-- </section> -->
     </main>
 
     <footer>

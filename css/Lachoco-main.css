@@ -67,6 +67,7 @@ html {
     display: block;
 }
 
+
 .move {
     position: relative;
     /* position: fixed; */
@@ -101,15 +102,34 @@ header.nav-open .move {
     padding: .5rem 0;
 }
 
-.nav-item::before {
-    content: '';
+
+/* nav line movement */
+.nav-item a:after{    
+    content: ' ';
     position: absolute;
-    margin-left:30%;
-    width: 40%;
-    height: 1px;
-    left: 0;
+    z-index: 10;
     bottom: 0;
-    background: var(--choco-color);
+    left: 50%;
+    display: block;
+    width: 125px;
+    height: 5px;
+    transform: translate(-50%);
+}
+
+.nav-item a:hover:after {
+    height: 1px;
+    animation: ad_width .3s linear forwards;
+    background: var(--red-color);
+}
+
+@keyframes ad_width {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 40%;
+    }
 }
 
 .dropdown .nav-item::before {
@@ -122,12 +142,7 @@ header.nav-open .move {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    transition: color 0.5s;
-}
-
-.nav-link:hover {
-    color: var(--red-color);
-    text-decoration: none;
+    
 }
 
 
@@ -305,8 +320,12 @@ main {
     background-repeat: repeat;
     background-size: auto;
     border-bottom: 1px solid rgb(255, 255, 255, 0);
+    
 }
 
+#abs{
+    padding-top:1px;
+}
 
 
 
@@ -420,7 +439,6 @@ main {
 
 
 /*Styling about us and events */
-
 .context h2  {
     text-align: center;
 }
@@ -430,6 +448,61 @@ main {
     margin: 0 auto;
     text-align: justify;
 }
+
+
+#quote p{ 
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    padding-top:2rem;
+}
+#quote a{
+    font-size: 15px;
+    letter-spacing: 2px;
+    float:right;
+    padding:2rem 10%;
+    text-decoration:none;
+    color:var(--choco-color);
+    transition:color .5s;
+}
+
+#quote a:hover, #quote a:focus, #quote a:active{
+    color:var(--red-color);
+}
+
+ #quote{
+    font-family: 'Playball', cursive;
+    font-weight: bold;
+    display: flex;
+
+    margin:5rem 20%;
+    color: var(--choco-color);
+    
+}
+
+
+#quote>div:nth-child(2){
+    width:40%;
+   
+}
+
+.quote-text{
+    margin-right:3em; 
+    width:60%;
+}
+#quote img{
+    width:100%;
+    
+}
+
+
+
+
+
+
+
+
+
 
 .context-1 {
     font-family: 'Playball', cursive;
@@ -445,6 +518,7 @@ main {
     margin: 5rem auto;
     color: var(--choco-color);
     padding: 3rem 0;
+   
 }
 
 #pen img{
@@ -467,48 +541,7 @@ main {
     letter-spacing: 2px;
     line-height: 2rem;
 }
-#quote a{
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-#quote p{
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 1.5rem;
-}
- #quote{
-    font-family: 'Playball', cursive;
-    font-weight: bold;
-    display: flex;
-  /*  width: 50%;*/
-    margin:0 20%;
-    color: var(--choco-color);
-    border:1px solid red;
-}
 
-#quote>div:nth-child(1){
-    width:60%;
-    border:1px solid red;
-}
-
-#quote>div:nth-child(2){
-    width:40%;
-    border:1px solid red;
-}
-
-.quote-text{
-    margin-right:3em;
-}
-
-#quote a{
-    text-align: right;
-    text-decoration:none;
-    color:var(--green-color);
-}
-#quote img{
-    width:100%;
-    
-}
 
 .context-2 {
     color: #000;
@@ -886,8 +919,131 @@ table{
 
 
 /* begin styling store page */
+#la-store{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
 
-.all-products {
+.typesofproduct{
+    flex:22%;
+
+    background:#fffdf7;
+    margin-top:0;
+}
+
+.typesofproduct ul{
+
+    display:block;  
+    list-style-type:none;
+    padding:10rem 0;
+    text-align: center;
+    position: fixed;
+    width: 22%;
+    margin:0px auto;
+}
+
+.typesofproduct ul li{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .77em;
+    line-height: 5em;
+}
+
+.typesofproduct>ul>li>a{
+    text-decoration: none;
+    color: #a68676;
+}
+
+.typesofproduct a:hover, .typesofproduct a:focus, .typesofproduct a:active {
+    background: linear-gradient(to bottom, #f5dfb0 0%, #e5bf76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#e5bf76;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.allProducts{
+    margin:2rem auto 60px auto;
+    flex:78%;
+    position: relative;
+}
+
+.allProducts h4{
+    width:98%;
+    margin:10px auto;
+    color: #a68676;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.allProducts>h4>span{
+    font-weight: 100;
+    letter-spacing: .29em;
+    font-size: .9em;
+    color: #210e03;
+}
+
+.listRow{
+    margin:0px auto 100px auto;
+    height:auto;
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    width:100%;
+}
+
+.listRow div{
+    margin:3em 0;
+}
+
+.listRow div img{
+    width:60%;
+    height:auto;
+}
+
+.listRow div p{
+    font-family: "Garamond", serif;
+    font-size: 1.2em;
+    color: var(--choco-color);
+}
+
+.listRow .addbtn2{
+    letter-spacing: .1em;
+    font-size: .9em;
+    text-transform: capitalize;
+    background: none;
+    font-weight: 600;
+    color: var(--product-bgcolor);
+    background-color: var(--green-color);
+    padding:.9em 1.5em;
+    transition:background-color 0.25s;
+    text-decoration: none;
+}
+
+.listRow .addbtn2 span{
+    padding-right:2.5em;
+}
+
+.allProducts a:hover, .allProducts a:focus, .allProducts a:active{
+    text-decoration: none;
+    background-color: var(--main-bgcolor);
+    
+    color: var(--choco-color);
+} 
+
+.chocoName{
+    width:98%;
+    height:3em;
+    padding-top:.5em;
+    margin:auto;
+}
+
+
+
+/* .all-products {
     
     width: 90%;
     margin: 0 auto;
@@ -903,10 +1059,10 @@ table{
     padding-top: 2rem;
     margin: 0 auto 2rem auto;
     border-bottom: 2px solid var(--green-color);
-}
+} */
 
-.productImage {
-    /*Styling product image*/
+/*Styling product image*/
+/* .productImage {
     flex-basis: 200px;
     margin: 1rem;
     padding: 1rem;
@@ -938,7 +1094,8 @@ table{
 
 .productImage img:hover, .productImage img:focus {
     opacity: .45;
-}
+} */
+
 .productImage-detail{
     display: flex;
     text-align: center;
@@ -1260,7 +1417,7 @@ textarea{
     .context-1 {
         width: 90%;
         margin: .5rem auto;
-        margin-top: -10rem;
+        
         padding: 1rem .5rem;
     }
     .events {
@@ -1341,7 +1498,7 @@ textarea{
 
 @media screen and (max-width:480px) {
     .context-1 {
-        margin-top: -20rem;
+        
     }
     td img {
         width: 100px;
