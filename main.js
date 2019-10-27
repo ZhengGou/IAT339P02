@@ -16,6 +16,7 @@ var menuWidth=$('#top_nav').width();
 // });
 var isSlidedOut=false;
 $(document).ready(function(){
+
   $(".toggleA").click(function(){
     toBeSlected('header').classList.toggle('nav-open');
     isSlidedOut = true;
@@ -27,7 +28,7 @@ $(document).ready(function(){
   });
 
   $('.special').click(function(){
-    if(isSlidedOut==true){
+    if(isSlidedOut==true) {
       toBeSlected('header').classList.toggle('nav-open');
     // toBeSlected('header').classList.hide('nav-open');
     // $('#top_nav').css('transform', 'translateX(-26em)');

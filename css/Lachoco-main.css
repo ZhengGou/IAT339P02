@@ -8,7 +8,17 @@ html {
     scroll-behavior: smooth;
 }
 
+/* color root */
 
+:root {
+    --choco-color: #69524B;
+    --main-bgcolor: #EDCC92;
+    --green-color: #64644E;
+    --product-bgcolor: #F9F3E8;
+    --red-color: #902e3f;
+}
+
+/* styling navigation bar */
 .toggleA{
     font-size: 1.5em;
     position: absolute;
@@ -49,6 +59,7 @@ html {
     overflow: hidden;
     display: block;
     text-align: center;
+    border:1px solid red;
 }
 
 #top_nav a {
@@ -63,6 +74,11 @@ html {
     z-index: 2000;
 }
 
+header.nav-open{
+    bottom:0;
+    border:1px solid red;
+}
+
 header.nav-open .toggleB {
     display: block;
 }
@@ -75,6 +91,8 @@ header.nav-open .move {
 
 .nav-list {
     list-style: none;
+    padding-top:50% ;
+    
 }
 
 .nav-item {
@@ -112,6 +130,8 @@ header.nav-open .move {
     text-decoration: none;
 }
 
+
+
 /*dropdown*/
 
 .dropdown-content {
@@ -137,7 +157,13 @@ body {
     overflow-y: scroll;
 }
 
-/* footer */
+
+
+
+
+
+
+/* beign styling footer */
 
 footer {
     background-color: #F6EDDE;
@@ -169,14 +195,17 @@ footer * {
     color: var(--red-color);
 }
 
-/* color root */
 
-:root {
-    --choco-color: #69524B;
-    --main-bgcolor: #EDCC92;
-    --green-color: #64644E;
-    --product-bgcolor: #F9F3E8;
-    --red-color: #902e3f;
+
+.footer-nav a{
+    text-decoration: none;
+    color: var(--green-color);
+    font-weight: bold;
+    padding: .5em;
+}
+
+.fab:active, .fab:hover, .fab:focus {
+    color: var(--red-color);
 }
 
 /* style whole page button*/
@@ -262,6 +291,11 @@ button:hover {
 
 /* end header css */
 
+
+
+
+
+
 /* beign main css */
 
 main {
@@ -272,6 +306,11 @@ main {
     background-size: auto;
     border-bottom: 1px solid rgb(255, 255, 255, 0);
 }
+
+
+
+
+
 
 /* begin styling home page  */
 
@@ -314,7 +353,7 @@ main {
     background-image: url("../img/choco_img1.jpg");
     background-repeat: no-repeat;
     height: 600px;
-    background-size: 100% auto;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -326,7 +365,7 @@ main {
     background-image: url("../img/choco_img2.jpg");
     background-repeat: no-repeat;
     height: 600px;
-    background-size: 100% auto;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -334,17 +373,7 @@ main {
     z-index: 1;
 }
 
-/* .top-slider-1:nth-child(3) {
-    background-image: url("../img/choco_img3.jpg");
-    background-repeat: no-repeat;
-    height: 600px;
-    background-size: 100% auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-} */
+
 
 .top-slider-1-subtitle, .top-slider-2-subtitle, .top-slider-3-subtitle {
     position: absolute;
@@ -433,10 +462,52 @@ main {
     margin: 0;
 }
 
-.context-1 p {
+.context-1 p{
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 2rem;
+}
+#quote a{
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+#quote p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+ #quote{
+    font-family: 'Playball', cursive;
+    font-weight: bold;
+    display: flex;
+  /*  width: 50%;*/
+    margin:0 20%;
+    color: var(--choco-color);
+    border:1px solid red;
+}
+
+#quote>div:nth-child(1){
+    width:60%;
+    border:1px solid red;
+}
+
+#quote>div:nth-child(2){
+    width:40%;
+    border:1px solid red;
+}
+
+.quote-text{
+    margin-right:3em;
+}
+
+#quote a{
+    text-align: right;
+    text-decoration:none;
+    color:var(--green-color);
+}
+#quote img{
+    width:100%;
+    
 }
 
 .context-2 {
@@ -543,30 +614,17 @@ main {
     background-image: url("../img/factory.jpg");
 }
 
-/* 
-.events-num, .events-context{
-    display:inline-block;
-} */
-
-/* .all-events {
-    flex-wrap: wrap;
-    width: 50%;
-    text-align: center;
-    margin: 2rem;
-    border: 2px solid #000;
-    border-radius: 3%;
-    padding: 2rem;
-    opacity: 1;
-    transition: opacity .5s linear;
-    text-decoration: none;
-    color:var(--choco-color);
-}
-
-.all-events:hover, .all-events:active, .all-events:focus {
-    opacity: .25;
-} */
 
 /* end styling home page  */
+
+
+
+
+
+
+
+
+
 
 /* begin  styling la_checkout page */
 
@@ -823,6 +881,10 @@ table{
 
 /* end  styling la_checkout page */
 
+
+
+
+
 /* begin styling store page */
 
 .all-products {
@@ -890,6 +952,7 @@ table{
     border-radius: 5%;
     width:50%;
     flex-wrap: wrap;
+    border:2px solid red;
   }
 
 .textandreview{
@@ -899,10 +962,9 @@ table{
 
 .textbox {
     font-size: 1.2rem;
-    padding: 2rem;
-    padding-top:2rem;
-    padding-bottom: 0;
-    text-align: left;
+    padding: 2rem 2rem 0 2rem;
+    text-align: justify;
+    border:2px solid blue;
 }
 
 .textbox p{
@@ -919,8 +981,34 @@ textarea{
 .productdetailh2{
     text-align: left;
     font-size: 2rem;
-
 }
+
+
+.productImage-detail-2{
+    display: flex;
+    text-align: center;
+    padding-top:5rem;
+    padding-bottom: 5rem;
+}
+.productImage-detail-2 img{
+    margin:1rem;
+    padding: 1rem;
+    background: #F6EDDE;
+    border-radius: 5%;
+    width:50%;
+    flex-wrap: wrap;
+    border:2px solid red;
+  }
+  .textandreview-2{
+    flex-wrap: wrap;
+    width:60%;
+}
+
+
+
+
+
+
 
 /* event_image */
 .center_align{
@@ -994,6 +1082,48 @@ textarea{
     padding-top:1rem;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Responsive*/
 
 @media screen and (max-width:70em) {
