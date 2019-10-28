@@ -924,7 +924,6 @@ table{
 
 .typesofproduct{
     flex:22%;
-
     background:#fffdf7;
     margin-top:0;
 }
@@ -991,14 +990,26 @@ table{
 }
 
 .listRow div{
-    margin:3em 0;
+    width:30%;
+    height: auto;
+    border: 1px solid black;
 }
 
 .listRow div img{
-    width:60%;
-    height:auto;
+    width:350px;
+    height:767px;
+    overflow: hidden;
+    transition:.5s
 }
-
+.listRow div img:hover{
+    opacity: .5;
+}
+.listRow .giftset{
+    width:350px;
+    height:auto;
+    overflow: hidden;
+    transition:.5s
+}
 .listRow div p{
     font-family: "Garamond", serif;
     font-size: 1.2em;
@@ -1366,7 +1377,26 @@ textarea{
         width: auto;
     }
 
+    .typesofproduct{
+        display: none;
+    }
 
+
+    .allProducts{
+        display: block;
+        width: 100%;
+    }
+
+    .listRow {
+        display: block;
+    } 
+    .listRow div{
+        width:100%;
+        height: auto;
+        margin-top:2rem;
+        margin-bottom: 2rem;
+        border: 1px solid black;
+    }
 }
 
 @media screen and (max-width:35em) {
