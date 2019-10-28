@@ -442,8 +442,19 @@ main {
     margin: 0 auto;
     text-align: justify;
 }
+.contextandimg{
+    width: 100%;
+}
 
-
+#quote{
+    font-family: 'Playball', cursive;
+    font-weight: bold;
+    width: 70%;
+    display: flex;
+    margin:5rem auto;
+    color: var(--choco-color);
+    
+}
 #quote p{ 
     font-size: 20px;
     letter-spacing: 2px;
@@ -461,28 +472,22 @@ main {
 }
 
 #quote a:hover, #quote a:focus, #quote a:active{
+
+    text-decoration: underline;
     color:var(--red-color);
 }
 
- #quote{
-    font-family: 'Playball', cursive;
-    font-weight: bold;
-    display: flex;
-
-    margin:5rem 20%;
-    color: var(--choco-color);
-    
-}
+ 
 
 
 #quote>div:nth-child(2){
-    width:40%;
-   
+    width: 40%;
+   margin: 1rem;
 }
 
 .quote-text{
-    margin-right:3em; 
-    width:60%;
+    margin:1rem; 
+    width: 60%; 
 }
 #quote img{
     width:100%;
@@ -605,11 +610,9 @@ main {
 
 .borderline {
     background-color: var(--choco-color);
-    width: 500px;
     flex: 1;
     text-align: center;
-    border: 2px solid var(--product-bgcolor);
-   
+    border: 2px solid var(--product-bgcolor); 
     margin: 1rem;
     /* transition: 0.5s; */
     background-position: center;
@@ -1255,40 +1258,6 @@ textarea{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Responsive*/
 
 @media screen and (max-width:70em) {
@@ -1366,8 +1335,8 @@ textarea{
     }
 
     #pen img{
-    top:20rem;
-    left:8rem;
+        top:20rem;
+        left:8rem;
     }
 
     .borderline{
@@ -1377,13 +1346,27 @@ textarea{
 
     .productImage-detail img{
         width:50%;
-
       }
     
     .textandreview{
-
-        width: 95%;
+        margin: .5rem;
+        width: auto;
     }
+    #quote{
+        width: 75%;
+        display: block;
+    }
+    .quote-text{
+        margin:.5rem;
+        width: auto;
+    }
+    
+    #quote>div:nth-child(2){
+        margin:.5rem;
+        width: auto;
+    }
+
+
 }
 
 @media screen and (max-width:35em) {
@@ -1421,6 +1404,11 @@ textarea{
         padding-bottom: 3rem;
         padding-top: 1rem;
         text-align: center;
+    }
+
+    #quote{
+        width: 90%;
+        display: block;
     }
     .all-products {
         width: 80%;
