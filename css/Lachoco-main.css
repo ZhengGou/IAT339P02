@@ -518,7 +518,6 @@ main {
     position: relative;
     width: 60%;
     min-height: 800px;
-    max-height: auto;
     margin: 5rem auto;
     color: var(--choco-color);
     padding: 3rem 0;
@@ -745,7 +744,7 @@ form{
 .container{
     background-color: #cfcccc85;
     padding:3px 18px 13px 18px;
-    border: 1ox solid lightgrey;
+    border: 1px solid lightgrey;
     border-radius: 3px;
 }
 
@@ -1539,7 +1538,7 @@ textarea{
     }
 
     .eventExplanation{
-        flex-wrap: block;
+        display: block;
         width: 80%;
         margin: 0 auto;
     }
