@@ -16,32 +16,7 @@
 <body>
     <header>
         <i class="fas fa-align-right toggleA"></i>
-        <div class="move">
-            <i class="fas fa-times toggleB"></i>
-            <nav id="top_nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="home.html" class="nav-link">Homepage</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="la_store.html" class="nav-link">Store</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="la_aboutus.html" class="nav-link">About Us</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="la_events_1.html" class="nav-link dropdown-toggle">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="la_contactus.html" class="nav-link ">Contact Us</a>
-                    </li>
-                </ul>
-
-            </nav>
-
-        </div>
+        
         <div class="header-information">
             <p>Free domestic shipping on orders over $ 50 .</p>
         </div>
@@ -57,26 +32,52 @@
 
         </div>
     </header>
+    <nav id="top_nav">
+            <i class="fas fa-times toggleB"></i>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="la_store.html" class="nav-link">Store</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="la_aboutus.html" class="nav-link">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="la_contactus.html" class="nav-link ">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </nav>
     <script src="main.js"></script>
     <main>
         <h2 class="maintitle">Checkout</h2>
-        <section class="spacing">
-            <h2 class="centeringObject">Cart Item(s)</h2>
-            <table class="spacingSection">
-                <tr>
-                    <th>No.</th>
-                    <th>Products</th>
-                    <th>Price ($)</th>
-                    <th>Quatity</th>
-                    <th class=gridSpacing> </th>
-                </tr>
-                <tr>
-                    <td class="centeringObject">1.</td>
-                    <td class="wrapping"><img src="img/chocobar_maya70.png" alt="product">
-                        <p>70% Maya</p>
-                    </td>
-                    <td class="centeringObject">5.00</td>
-                    <td class="centeringObject">
+        <div class="shoppingcart">
+            <div class="shoppingcart-firstrow">
+                <div class="firstrow-1">
+                    <h3>Product</h3>
+                    <div class="checkoutpage-imgcontainer">
+                    <a href="la_detail.html">
+                        <img src="img/chocobar_maya70_small.png" alt="productimg_maya">
+                        </a>
+                        <p>Maya 70%</p>
+                    </div>
+                </div>
+                
+                <div class="firstrow-2">
+                    <h3>Price</h3>
+                    <div class="checkoutpage-price">
+                        <p>$5.00</p>
+                    </div>
+                </div>
+
+                <div class="firstrow-2">
+                    <h3>Quantity</h3>
+                    <div class="checkoutpage-price">
                         <select>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -89,24 +90,15 @@
                             <option value="9">9</option>
                             <option value="10">10</option>
                         </select>
-                    </td>
-                </tr>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="shoppingcart-secondrow">
+                <input type="submit" value="Proceed to Payment" class="proceedBtn">
 
-                <tr>
-                    <td> </td>
-                    <td class="rightAlignment"><span>Total:</span></td>
-                    <td class="centeringObject">5.00</td>
-                    <td class="centeringObject">x1</td>
-                    <td> </td>
-                </tr>
-            </table>
-            <!-- 要删掉的，不需要 -->
-            <section class="proceedButtonSpacing">
-                <a href="#toMe"><button type="button" class="proceed_to_checkout">Proceed To
-                        Checkout</button></a>
-            </section>
-
-        </section>
+            </div>
+        </div>
         <div class="checkoutall">
             <div class="row" id="toMe">
                 <div class="col-75">
@@ -174,7 +166,7 @@
                         </form>
 
 
-                    </div>
+     
                     <label>
                         <input type="checkbox" checked="checked" name="sameadr">Shipping address same as
                         billing</label>
@@ -192,6 +184,7 @@
                     <p>Total<span class="price" style="color:black"><b>$5</b></span></p>
                 </div>
             </div>
+        </div>
         </div>
 
     </main>
