@@ -935,7 +935,7 @@ td>span {
 }
 
 .checkoutpage-price {
-    margin-top: 40%;
+    margin-top: 15%;
 }
 
 .checkoutpage-price p {
@@ -1328,9 +1328,7 @@ textarea {
     .menu-toggle {
         font-size: 2rem;
     }
-    #top_nav {
-        width: 100%;
-    }
+
     /*   #top_nav {
         position: absolute;
         top: 0;
@@ -1470,6 +1468,7 @@ textarea {
         width: 100%;
         margin-left: 0;
         text-align: center;
+        margin-bottom: 4rem;
     }
     .listRow .GiftSet {
         width: 100%;
@@ -1481,11 +1480,22 @@ textarea {
         height: auto;
         margin-bottom: 2rem;
     }
-    .listRow .imgcontainer {
-        width: 100%;
-        height: auto;
-        margin-bottom: 2rem;
+    .listRow .imgcontainer-2 img{
+        width: 80%;
     }
+    .listRow .imgcontainer {
+        width: 195px;
+        height: 426px;
+        margin:1rem auto;
+        margin-bottom: 1rem;
+    }
+
+    .listRow div img {
+        width: 195px;
+        height: 426px;
+    }
+    
+
     .chocoName {
         width: 100%;
         padding-top: .0em;
@@ -1573,7 +1583,7 @@ textarea {
 
 
 
-@media screen and (max-width:35em) {
+@media screen and (max-width:480px) {
     #top_nav{
         width:100%;
      }
@@ -1681,4 +1691,13 @@ textarea {
         font-size: 16px;
         width: 95%;
     }
+
+    .checkoutpage-imgcontainer img{
+        width: 30%;
+    }
+    .checkoutpage-price {
+        margin-top: 50%;
+    }
+
+
 }
