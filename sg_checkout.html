@@ -2,309 +2,353 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel= "stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Cart</title>
-    <!--Product/Service Listing-->
-    <link href="css/main.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Cart</title>
+  <!--Product/Service Listing-->
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-           
-    <div class = "move">
-            <div class = "menu-toggle">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-times"></i>
-            </div>
-            <div class="overlay"></div>
-        
-            <nav id="top_nav">
-              <ul class="nav-list">
-                <li class = "nav-item">
-                    <a href="#interactive_elements" class = "nav-link">Interactive Elements</a>
+  <header>
+
+    <div class="move">
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="overlay"></div>
+
+      <nav id="top_nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#interactive_elements" class="nav-link">Interactive Elements</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#text_elements" class="nav-link">Text Elements</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#combined_elements" class="nav-link">Combined Elements</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="sg_product_listing.html" class="nav-link">Product Listing Template</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="sg_checkout.html" class="nav-link">Checkout Template</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#citations" class="nav-link">Citations</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="#" class="nav-link dropdown-toggle">Services</a>
+              <ul class="nav-list dropdown-content" id="myDropdown">
+                <li class="nav-item">
+                  <a href="sg_home.html" class="nav-link">Homepage</a>
                 </li>
-        
-                <li class = "nav-item">
-                    <a href="#text_elements" class = "nav-link">Text Elements</a>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Number 2</a>
                 </li>
-        
-                <li class = "nav-item">
-                    <a href="#combined_elements" class = "nav-link">Combined Elements</a>
-                </li>
-        
-                <li class = "nav-item">
-                    <a href="sg_product_listing.html" class = "nav-link">Product Listing Template</a>
-                </li>
-        
-                <li class = "nav-item">
-                    <a href="sg_checkout.html" class = "nav-link">Checkout Template</a>
-                </li>
-        
-                <li class = "nav-item">
-                    <a href="#citations" class = "nav-link">Citations</a>
-                </li>
-                <li class = "nav-item">
-                    <div class = "dropdown">
-                        <a href="#" class = "nav-link dropdown-toggle" >Services</a>
-                        <ul class="nav-list dropdown-content" id = "myDropdown">
-                          <li class="nav-item">
-                            <a href="sg_home.html" class = "nav-link">Homepage</a>
-                          </li>
-        
-                          <li class="nav-item">
-                              <a href="#" class = "nav-link">Number 2</a>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a href="#" class = "nav-link">Number 3</a>
-                            </li>
-                        </ul>
-                    </div>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Number 3</a>
                 </li>
               </ul>
-            </nav>
             </div>
-            <div class="header" id="topOfThePage">
-                <figure><img src="img/nlogo.png" alt="" width="300" /></figure>
-                <h1> La Choco Style Guide</h1>
-            
-                <p> La Choco, we sell the best taste.</p>
-            </div>
-    </header>
-    <script src="main.js"></script>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header" id="topOfThePage">
+      <figure><img src="img/nlogo.png" alt="" width="300" /></figure>
+      <h1> La Choco Style Guide</h1>
 
-    <main>
-        <!--Checkout Cart-->
-        <section class="element">
-            <h3>Checkout Cart</h3>
-            <h4>Sample code:</h4>
-            <code>
-            &lt;table&gt;<br>
-            &nbsp; &lt;tr&gt;<br>
-            &nbsp;&nbsp;&lt;th&gt;No.&lt;/th&gt;<br>
-            &nbsp;&nbsp;&lt;th&gt;Items&lt;/th&gt;<br>
-            &nbsp;&nbsp;&lt;th&gt;Price ($)&lt;/th&gt;<br>
-            &nbsp;&nbsp;&lt;th&gt; &lt;/th&gt;<br>
-            &nbsp;&lt;/tr&gt;<br>
-            &nbsp;&lt;tr&gt;<br>
-            &nbsp;&nbsp; &lt;td&gt;1.&lt;/td&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt;<br>
-            &nbsp;&nbsp;&nbsp; &lt;figure&gt;&lt;img src="img/chocobar_maya70.png" alt="product"&gt;&lt;/figure&gt;<br>
-            &nbsp;&nbsp;&nbsp; &lt;figurecaption&gt;70% maya&lt;/figurecaption&gt;<br>
-            &nbsp;&nbsp;&lt;/td&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt;$5.00&lt;/td&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;button type="button" &gt;Remove&lt;/button&gt;<br>
-            &nbsp;&nbsp;&lt;/td&gt;<br>
-            &nbsp;&lt;/tr&gt;<br>
-            &nbsp;&lt;tr&gt;<br>
-            &nbsp;&nbsp; &lt;td&gt;2.&lt;/td&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt;<br>
-            &nbsp;&nbsp;&nbsp; &lt;figure&gt;&lt;img src="img/chocobar_wanpu70.png" alt="product"&gt;&lt;/figure&gt;<br>
-            &nbsp;&nbsp;&nbsp; &lt;figurecaption&gt;70% Wanpu&lt;/figurecaption&gt;<br>
-            &nbsp;&nbsp;&lt;/td&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt;$7.00&lt;/td&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;button type="button" &gt;Remove&lt;/button&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;i  class="fa fa-close"&gt;&lt;/i&gt;<br>
-            &nbsp;&nbsp;&lt;/td&gt;<br>
-            &nbsp;&lt;/tr&gt;<br>
+      <p> La Choco, we sell the best taste.</p>
+    </div>
+  </header>
+  <script src="main.js"></script>
+
+  <main>
+    <!--Checkout Cart-->
+    <section class="element">
+      <h3>Checkout Cart</h3>
+      <h4>Sample code:</h4>
+      <code>&lt;div class="shoppingcart"&gt;
+              &lt;div class="shoppingcart-firstrow"&gt;
+                  &lt;div class="firstrow-1"&gt;
+                      &lt;h3&gt;Product&lt;/h3&gt;
+                      &lt;div class="checkoutpage-imgcontainer"&gt;
+                          &lt;a href="la_detail.html"&gt;
+                              &lt;img src="img/chocobar_maya70_small.png" alt="productimg_maya"&gt;
+                          &lt;/a&gt;
+                          &lt;p&gt;70% Maya Mountain Belize&lt;/p&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
     
-            &nbsp;&lt;tr&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt; &lt;/td&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt;&lt;span&gt;Total:&lt;/span&gt;&lt;/td&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt;$12.00&lt;/td&gt;<br>
-            &nbsp;&nbsp;&lt;td&gt; &lt;/td&gt;<br>
-            &nbsp;&lt;/tr&gt;<br>
-            &lt;/table&gt;&lt;br&gt;<br>
+                  &lt;div class="firstrow-2"&gt;
+                      &lt;h3&gt;Price&lt;/h3&gt;
+                      &lt;div class="checkoutpage-price"&gt;
+                          &lt;p&gt;$5.00&lt;/p&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
     
-            &lt;section&gt;<br>
-            &nbsp;&lt;button type="button" &gt;Proceed To Checkout&lt;/button&gt;<br>
-            &lt;/section&gt;<br>
+                  &lt;div class="firstrow-2"&gt;
+                      &lt;h3&gt;Quantity&lt;/h3&gt;
+                      &lt;div class="checkoutpage-price"&gt;
+                          &lt;select&gt;
+                              &lt;option value="1"&gt;1&lt;/option&gt;
+                              &lt;option value="2"&gt;2&lt;/option&gt;
+                              &lt;option value="3"&gt;3&lt;/option&gt;
+                              &lt;option value="4"&gt;4&lt;/option&gt;
+                              &lt;option value="5"&gt;5&lt;/option&gt;
+                              &lt;option value="6"&gt;6&lt;/option&gt;
+                              &lt;option value="7"&gt;7&lt;/option&gt;
+                              &lt;option value="8"&gt;8&lt;/option&gt;
+                              &lt;option value="9"&gt;9&lt;/option&gt;
+                              &lt;option value="10"&gt;10&lt;/option&gt;
+                          &lt;/select&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
+    
+                  &lt;div id="removeProduct"&gt;
+                      &lt;button type="button"&gt;Remove&lt;/button&gt;
+                      &lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/div&gt;
+              &lt;/div&gt;
+    
+              &lt;div class="shoppingcart-secondrow"&gt;
+                  &lt;input type="submit" value="Proceed to Payment" class="proceedBtn"&gt;
+    
+              &lt;/div&gt;
+          &lt;/div&gt;
            </code>
-    
-    
-            <h4>Rendered element:</h4>
-    
-            <section class="tables">
-    
-              <table>
-                <tr>
-                  <th>No.</th>
-                  <th>Items</th>
-                  <th>Price ($)</th>
-                  <th> </th>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td>
-                    <figure><img src="img/chocobar_maya70.png" alt="product">
-                      <figcaption>70% Maya</figcaption>
-                    </figure>
-    
-                  </td>
-                  <td>$5.00</td>
-                  <td>
-                    <button type="button">Remove</button>
-                    <i class="fa fa-close"></i>
-                  </td>
-                </tr>
-    
-                <tr>
-                    <td>2.</td>
-                    <td>
-                      <figure><img src="img/chocobar_wanpu70.png" alt="product">
-                        <figcaption>70% Wanpu</figcaption>
-                      </figure>
-      
-                    </td>
-                    <td>$7.00</td>
-                    <td>
-                      <button type="button">Remove</button>
-                      <i class="fa fa-close"></i> <!--Remove button will be change to "X" icon when in mobile size-->
-                    </td>
-                  </tr>
-    
-                <tr>
-                  <td> </td>
-                  <td><span>Total:</span></td>
-                  <td>$12.00</td>
-                  <td> </td>
-                </tr>
-              </table><br>
-    
-              <section id="checkoutBtn">
-                  <button type="button">Proceed To Checkout</button>
-              </section>
-    
-            </section>
-          </section>
-    
+      <code>
+            &lt;div class="checkoutall" id="paymentcart"&gt;
+          &lt;div class="row" id="toMe"&gt;
+              &lt;div class="col-75"&gt;
+                  &lt;div class="container"&gt;
+                      &lt;form action="/action_page.php"&gt;
+                          &lt;div class="row"&gt;
+                              &lt;div class="col-50"&gt;
+                                  &lt;h3&gt;Billing Address&lt;/h3&gt;
+                                  &lt;label for="fname"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt;Full Name&lt;/label&gt;
+                                  &lt;input type="text" id="fname" name="firstname" placeholder="Ethan"&gt;
 
-       
+                                  &lt;label for="email"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;Email&lt;/label&gt;
+                                  &lt;input type="text" id="email" name="email" placeholder="lza104@sfu.ca"&gt;
 
-        <!--Payment Form-->
-        <section class="element">
-            <h3>Payment Form</h3>
+                                  &lt;label for="adr"&gt;&lt;i class="fa fa-address-card-o"&gt;&lt;/i&gt;Address&lt;/label&gt;
+                                  &lt;input type="text" id="adr" name="address" placeholder="example address"&gt;
 
-            <h4>Sample code:</h4>
-            <code>
-                    &lt;form&gt; <br>
-                    &nbsp; &lt;section id="row"&gt;<br>
-                    &nbsp; &lt;h3&gt;Payment Form&lt;/h3&gt;<br>
-                    &nbsp; &nbsp;&lt;div class="col-radio"&gt;<br>
-            
-                    &nbsp; &nbsp; &nbsp; &lt;label &gt;Select Card Type:&lt;/label&gt;<br>
-                    &nbsp; &nbsp; &nbsp; &lt;input type="radio" name="cardtype" value="Visa"&gt;Visa<br>
-                    &nbsp; &nbsp; &nbsp; &lt;input type="radio" name="cardtype" value="Visa"&gt;Mastercard<br>
-            
-                    &nbsp; &nbsp; &lt;/div&gt;&lt;br&gt;<br>
-            
-                    &nbsp; &nbsp;&lt;div class="col"&gt;<br>
-            
-                    &nbsp; &nbsp; &nbsp; &lt;label for="inputcname"&gt;Cardholder's name:&lt;/label&gt;<br>
-                    &nbsp; &nbsp; &nbsp;  &lt;input id="inputcname" placeholder="Margaret LU" type="text"&gt;<br>
-            
-                        
-            
-                        &nbsp; &nbsp; &nbsp; &lt;label for="inputcardnumber"&gt;Card Number:&lt;/label&gt;<br>
-                        &nbsp; &nbsp; &nbsp;  &lt;input id="inputcardnumber" placeholder="16-digits" type="text"&gt;<br>
-            
-                        &nbsp; &nbsp;  &lt;/div&gt;&lt;br&gt;<br>
-            
-            
-                        &nbsp; &nbsp; &lt;div class="col"&gt;<br>
-            
-                        &nbsp; &nbsp; &nbsp; &lt;label for="inputDate"&gt;Expiration date:&lt;/label&gt;<br>
-                        &nbsp; &nbsp; &nbsp; &lt;input id="inputDate" placeholder="15" type="text"&gt;<br>
-            
-                        &nbsp; &nbsp; &nbsp; &lt;label for="inputYear"&gt;Year:&lt;/label&gt;<br>
-                        &nbsp; &nbsp; &nbsp;  &lt;input id="inputYear" placeholder="2019" type="text"&gt;<br>
-            
-                        
-                        &nbsp; &nbsp; &nbsp; &lt;label for="code"&gt;Security Code:&lt;/label&gt;<br>
-                        &nbsp; &nbsp; &nbsp;  &lt;input id="code" name="code" placeholder="3-digits" type="text"&gt;<br>
-            
-                        &nbsp; &nbsp;  &lt;/div&gt;&lt;br&gt;<br>
-            
-                        &nbsp; &nbsp; &lt;button type="submit" &gt;Submit&lt;/button&gt;<br>
-            
-                        &nbsp; &lt;/section&gt;<br>
-            
-                         &lt;/form&gt;<br>
-                </code>
+                                  &lt;label for="city"&gt;&lt;i class="fa fa-institution"&gt;&lt;/i&gt;City&lt;/label&gt;
+                                  &lt;input type="text" id="city" name="city" placeholder="Surrey"&gt;
 
-            <h4>Rendered element:</h4>
+                                  &lt;div class="row"&gt;
+                                      &lt;div class="col-50"&gt;
+                                          &lt;label for="state"&gt;State&lt;/label&gt;
+                                          &lt;input type="text" id="state" name="state" placeholder="Van"&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="col-50"&gt;
+                                          &lt;label for="zip"&gt;Zip&lt;/label&gt;
+                                          &lt;input type="text" id="zip" name="zip" placeholder="V5A 3W6"&gt;
+                                      &lt;/div&gt;
 
-            <form>
-                <section id="row">
-                    <h3>Payment Form</h3>
-                    <div class="col-radio">
+                                  &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;div class="col-50"&gt;
+                                  &lt;h3&gt;Payment&lt;/h3&gt;
+                                  &lt;label for="fname"&gt;Accepted Card&lt;/label&gt;
+                                  &lt;div class="icon-container"&gt;
+                                      &lt;i class="fa fa-cc-visa" style="color: navy;"&gt;&lt;/i&gt;
+                                      &lt;i class="fa fa-cc-amex" style="color: blue;"&gt;&lt;/i&gt;
+                                      &lt;i class="fa fa-cc-mastercard" style="color: red;"&gt;&lt;/i&gt;
+                                      &lt;i class="fa fa-cc-discover" style="color: orange;"&gt;&lt;/i&gt;
+                                  &lt;/div&gt;
+                                  &lt;label for="cname"&gt;Name On Card&lt;/label&gt;
+                                  &lt;input type="text" id="cname" name="cardnumber" placeholder="Ethan Zhu"&gt;
 
-                        <label>Select Card Type: </label><br>
-                        <input type="radio" name="cardtype" value="Visa" class="rd">Visa
-                        <span class="checkmark"></span>
-                        <input type="radio" name="cardtype" value="Visa" class="rd">Mastercard
-                        <span class="checkmark"></span>
-                    </div><br>
+                                  &lt;label for="ccnum"&gt;Credit Card&lt;/label&gt;
+                                  &lt;input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000"&gt;
 
-                    <div class="col">
+                                  &lt;label for="expmonth"&gt;Exp Month&lt;/label&gt;
+                                  &lt;input type="text" id="expmonth" name="expmonth" placeholder="12"&gt;
 
-                        <label for="inputcname">Cardholder's name:</label>
-                        <input id="inputcname" placeholder="Margaret LU" type="text">
+                                  &lt;div class="row"&gt;
+                                      &lt;div class="col-50"&gt;
+                                          &lt;label for="expyear"&gt;Year&lt;/label&gt;
+                                          &lt;input type="text" id="expyear" name="expyear" placeholder="2022"&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="col-50"&gt;
+                                          &lt;label for="cvv"&gt;CVV&lt;/label&gt;
+                                          &lt;input type="text" id="cvv" name="cvv" placeholder="333"&gt;
+                                      &lt;/div&gt;
 
-                        <label for="inputcardnumber">Card Number:</label>
-                        <input id="inputcardnumber" placeholder="16-digits" type="text">
+                                  &lt;/div&gt;
 
-                    </div><br>
+                              &lt;/div&gt;
+                          &lt;/div&gt;
+                      &lt;/form&gt;
 
 
-                    <div class="col">
 
-                        <label for="inputDate">Expiration date:</label>
-                        <input id="inputDate" placeholder="01" type="text">
+                      &lt;label for="checkbox"&gt;
+                          &lt;input id="checkbox"type="checkbox" checked="checked" name="sameadr"&gt;Shipping address same as
+                          billing&lt;/label&gt;
+                      &lt;input type="submit" value="Continue To checkbox" class="submitBtn"&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
 
-                        <label for="inputYear">Year:</label>
-                        <input id="inputYear" placeholder="2019" type="text">
-
-                        <label for="code">Security Code:</label>
-                        <input id="code" name="code" placeholder="3-digits" type="text">
-
-                    </div><br>
-
-                    <button type="submit">Submit</button>
-
-                </section>
-
-            </form>
-
-        </section>
-    </main>
-
-    <footer>
-        <section id="citations">
-            <h2>Citations</h2>
-
-            <ul>
-       
-                <li>Logo image, cat images and color plane image were all create by myself.</li>
-        
-                <li>URW Studio.Designer.<strong>Franklin Gothic Medium[font]</strong>. Retrieved from <a href=
-                  "https://www.fonts.com/font/urw/franklin-gothic/medium ">https://www.fonts.com/font/urw/franklin-gothic/medium</a>.
-                </li>
-                <li>Łukasz Dziedzic.Designer.<strong>Lato[font]</strong>. Retrieved from <a href=
-                  "https://fonts.google.com/specimen/Lato ">https://fonts.google.com/specimen/Lato</a>.
-                </li>
-              </ul>
+           </code>
 
 
-        </section>
-        <p>Copyright © 2019 by Wenyue He and Ethan Zhu</p>
-    </footer>
+
+
+      <h4>Rendered element:</h4>
+
+      <h3 class="maintitle">Checkout</h3>
+      <div class="shoppingcart">
+        <div class="shoppingcart-firstrow">
+          <div class="firstrow-1">
+            <h3>Product</h3>
+            <div class="checkoutpage-imgcontainer">
+              <a href="la_detail.html">
+                <img src="img/chocobar_maya70_small.png" alt="productimg_maya">
+              </a>
+              <p>70% Maya Mountain Belize</p>
+            </div>
+          </div>
+
+          <div class="firstrow-2">
+            <h3>Price</h3>
+            <div class="checkoutpage-price">
+              <p>$5.00</p>
+            </div>
+          </div>
+
+          <div class="firstrow-2">
+            <h3>Quantity</h3>
+            <div class="checkoutpage-price">
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="removeProduct">
+            <button type="button">Remove</button>
+            <i class="fa fa-close"></i></div>
+        </div>
+
+        <div class="shoppingcart-secondrow">
+          <input type="submit" value="Proceed to Payment" class="proceedBtn">
+
+        </div>
+      </div>
+      <div class="checkoutall">
+        <div class="row" id="toMe">
+          <div class="col-75">
+            <div class="container">
+              <form>
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ethan">
+
+                    <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                    <input type="text" id="email" name="email" placeholder="lza104@sfu.ca">
+
+                    <label for="adr"><i class="fa fa-address-card-o"></i>Address</label>
+                    <input type="text" id="adr" name="address" placeholder="example address">
+
+                    <label for="city"><i class="fa fa-institution"></i>City</label>
+                    <input type="text" id="city" name="city" placeholder="Surrey">
+
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="Van">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="V5A 3W6">
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Card</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color: navy;"></i>
+                      <i class="fa fa-cc-amex" style="color: blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                      <i class="fa fa-cc-discover" style="color: orange;"></i>
+                    </div>
+                    <label for="cname">Name On Card</label>
+                    <input type="text" id="cname" name="cardnumber" placeholder="Ethan Zhu">
+
+                    <label for="ccnum">Credit Card</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="12">
+
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2022">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="333">
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </form>
+
+
+
+              <label for="checkbox">
+                <input id="checkbox" type="checkbox" checked="checked" name="sameadr">Shipping address same as
+                billing</label>
+              <input type="submit" value="Continue To checkbox" class="submitBtn">
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <section id="citations">
+
+
+    </section>
+    <p>Copyright © 2019 by Wenyue He and Ethan Zhu</p>
+  </footer>
 
 
 </body>
