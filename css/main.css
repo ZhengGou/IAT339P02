@@ -14,7 +14,7 @@ html{
 }
 
 body {
-  font-family: "Neuzeit-Grotesk","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Neuzeit-Grotesk", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-style: normal;
     line-height: 1.6;
@@ -198,7 +198,7 @@ section{
 }
 
 h2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*https://www.fonts.com/font/urw/franklin-gothic/medium*/
+  font-family: 'Playball', cursive;
   font-weight: bold;
   margin-top: 1rem;
   color:#69524B;
@@ -219,9 +219,26 @@ section>h3, section>h4 {
   line-height:3em;
 }
 
+.element ol{
+  list-style-type: none
+}
 
 
 /* header nav*/
+.navButton{
+color: #69524B;
+font-size: 1.2rem;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 2px;
+transition: 2s;
+}
+.navButton:hover{
+  cursor: pointer;
+  color: black;
+  text-decoration: underline;
+}
+
 
 
 code {
@@ -317,7 +334,10 @@ select{
 
 
 
-
+.banding figcaption{
+  margin-top:-3rem;
+  margin-bottom: 2rem;
+}
 
 
 
@@ -340,16 +360,20 @@ select{
 
 /* image as a link.*/
 #image{
-  
   width: auto;
   height:300px;
+  transition: 2s;
+}
+
+.imagelink{
+  width: auto;
+  height:300px;
+  overflow: hidden;
 }
 
 #image:hover,#image:focus{
-    opacity: 0.95;
-    -moz-box-shadow: 0 0 40px #ccc;
-    -webkit-box-shadow: 0 0 40px #ccc;
-    box-shadow: 0 0 40px #ccc;
+    opacity: 0.8;
+    transform: scale(1.1);
 
 }
 
@@ -383,22 +407,34 @@ select{
 
 }
 
+.productImageList{
+  text-align: center;
+  display:flex;
+  width:80%;
+}
 
 .productImage{                                     /*Styling product image*/
-  display:inline-block;
-  margin:1rem;
+  flex-wrap: wrap;
+  width: 30%;
+  margin:1rem auto;
   padding: 1rem;
   background: #F6EDDE;
-  border-radius: 5%;
+}
+.imgcontainer{
+  margin: 1rem auto;
+  width:225px;
+  height:auto;
+  overflow: hidden;
 }
 
 .productImage img{
   width:225px;
   height:auto;
-  opacity: 0.95;
-    -moz-box-shadow: 0 0 40px #ccc;
-    -webkit-box-shadow: 0 0 40px #ccc;
-    box-shadow: 0 0 40px #ccc;
+  transition: 2s;
+}
+.productImage img:hover{
+  transform: scale(1.1);
+  opacity: .9;
 }
 
 .productImage a{
@@ -413,45 +449,129 @@ select{
 }
 
 /* styling form*/
-form{
-  background-image: url("../img/payment_texture.png");
-   
-  height: 100%;
-  background-position: center;
-  background-size: 100% auto;
-  background-repeat: repeat;
-  
-  
-  width:50%;
-  height:auto;
-  border-radius: 5%;
-  padding:0 2rem 1.5rem 2rem;
-  line-height: 2em;
-  margin:0 auto;
+form {
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  text-align: left;
 }
 
-form input[type=text]{
-  
-  border:2px solid #EFEFEF;
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  margin-bottom: 1rem;
 }
 
-form section h3{
-font-size:36px;
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+  font-size: 1.2rem;
 }
 
-.rd{
-  margin:0 1rem;
+.col-25 p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  ;
+}
+
+.col-25 h4 {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  ;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25, .col-50, .col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #cfcccc85;
+  padding: 3px 18px 13px 18px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 18px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.submitBtn {
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  color: #F6Edde;
+  background-color: #64644E;
+  font-weight: bold;
+  width: 100%;
+  transition: 0.8s;
+}
+
+.submitBtn:hover {
+  color: black;
+  background-color: #EDCC92;
+}
+
+.col-25 a {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+.col-radio, .col {
+  margin-bottom: 2rem;
+}
+
+.col label, .col input, .col-radio label {
+  display: block;
+  margin: 0 auto;
+}
+
+.rd {
+  margin: 0 1rem;
+}
+
+#row button[type=submit] {
+  float: right;
 }
 
 /* style whole page button*/
 button{
   padding:.5rem 2rem;
-  border-radius:5%;
   border:none;
   color:#F6Edde;
   background-color: #64644E;
   font-weight:bold;
-  box-shadow: 5px 5px 5px #7D7D7D;
+
   transition: 0.5s;
 }
 
@@ -460,10 +580,6 @@ button:hover, button:focus{
   background-color: #EDCC92;
 }
 
-button:active{
-  box-shadow: none;
-  transform: translate(5px,5px);
-}
 
 
 
@@ -478,9 +594,8 @@ table{
 }
 
 .tables{
-  background: #F6EDDE;
-  border: 2px solid #64644E;
-  border-radius: 2%;
+  border-top: 1px solid #64644E;
+  border-bottom: 1px solid #64644E;
   min-width:40em;
   max-width:60%;
   margin:0 auto 2rem auto;
@@ -489,7 +604,6 @@ table{
 }
 
 th{
-  border-bottom: 2px solid #64644E;
   line-height:2rem;
 }
 
@@ -599,7 +713,7 @@ footer{
 
 
 /*Responsive*/
-@media screen and (max-width:50em){ /*For mobile and small tablet screen*/
+@media screen and (max-width:480px){ /*For mobile and small tablet screen*/
   body{
     min-width:30em; /*Minimum width for mobile screen*/
     max-width:100%;
@@ -661,10 +775,7 @@ footer{
   */
 
   /*lab2:Add a different hover and focus state styling to the image as a link.*/
-  #image{
-    width: 100%;
-  }
-
+  
   /* 
     COMBINED ELEMENTS -------------------
   */
@@ -675,14 +786,12 @@ footer{
     max-width:80%;
   }
 
-  .productImage img{
-    width:300px;
-    
-  }
+
 
   /* styling form*/
   form{
     width:100%;
+    padding: .6rem;
   }
 
   /*Styling cart items and checkout button*/
@@ -690,11 +799,15 @@ footer{
     width:100%;
   }
 
-  .tables{
-    min-width:27em;
-    max-width:100%;
-  }
-
+  
+.tables{
+  background: #F6EDDE;
+  border: none;
+  margin:0 auto;
+  margin-left: -1em;
+  padding:0 1rem;
+  min-width: 110%;
+}
   td>button{ /*when in mobile size, "Remove" button will be hidden*/
     display:none;
   }
@@ -715,5 +828,31 @@ footer{
     position:fixed;
     top:93%;
     left:90%;
+  }
+
+  .productImageList{
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .productImage{
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .banding ol{
+    width: 100%;
+  }
+  .banding li{
+    line-height: 2rem;
+  }
+
+  .banding ul li img{
+    width: 100%;
+  }
+
+  .banding figcaption{
+    margin-top:-.5rem;
+    margin-bottom: 2rem;
   }
 }

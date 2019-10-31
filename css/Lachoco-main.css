@@ -49,7 +49,7 @@ h1 {
     font-size: 2rem;
 }
 
-.header-main-cart-account .fa-cart-plus:hover，.fa-cart-plus:focus,.fa-cart-plus:active {
+.header-main-cart-account .fa-cart-plus:hover, .fa-cart-plus:focus,.fa-cart-plus:active {
     color: #F9F3E8;
 }
 
@@ -95,8 +95,6 @@ h1 {
 
 .move {
     position: relative;
-    /* overflow: hidden; */
-    /* position: fixed; */
     transition: 0.6s;
     z-index: 2000;
 }
@@ -226,7 +224,7 @@ footer * {
 
 /* style whole page button*/
 
-.submitBtn:hover， .submitBtn:focus，.submitBtn:active {
+.submitBtn:hover, .submitBtn:focus,.submitBtn:active {
     color: black;
     background-color: #EDCC92;
 }
@@ -677,12 +675,13 @@ form {
 }
 
 .col-75 {
-    -ms-flex: 75%;
-    flex: 75%;
+    margin: .5rem auto;
+    width: 75%;
 }
 
 .col-25, .col-50, .col-75 {
     padding: 0 16px;
+
 }
 
 .container {
@@ -933,7 +932,28 @@ td>span {
 .checkoutpage-price p {
     font-size: 1rem;
 }
+.citations{
+    text-align: left;
+    margin:0rem auto;
+}
+.citations h2{
+    font-family: 'Playball', cursive;
+    font-size: 36px;
+    padding-top: 2rem;
+    text-align: center;
+    border-bottom: 4px solid #64644E; 
+    border-bottom-style: double;
+    width: 70%;
+    margin:0rem auto;
+}
 
+.citations ul{
+    margin:5rem auto;
+    width: 80%;
+}
+.citations ul li{
+    font-size: 1rem;
+}
 .proceedBtn {
     padding: 12px;
     cursor: pointer;

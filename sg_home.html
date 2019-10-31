@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel= "stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>La Choco Style Guide</title>
 
   <link href="css/main.css" rel="stylesheet">
@@ -19,60 +20,7 @@
   
 
   <header>
-  
-    <div class = "move">
-    <div class = "menu-toggle">
-        <i class="fas fa-bars"></i>
-        <i class="fas fa-times"></i>
-    </div>
-    <div class="overlay"></div>
 
-    <nav id="top_nav">
-      <ul class="nav-list">
-        <li class = "nav-item">
-            <a href="#interactive_elements" class = "nav-link">Interactive Elements</a>
-        </li>
-
-        <li class = "nav-item">
-            <a href="#text_elements" class = "nav-link">Text Elements</a>
-        </li>
-
-        <li class = "nav-item">
-            <a href="#combined_elements" class = "nav-link">Combined Elements</a>
-        </li>
-
-        <li class = "nav-item">
-            <a href="sg_product_listing.html" class = "nav-link">Product Listing Template</a>
-        </li>
-
-        <li class = "nav-item">
-            <a href="sg_checkout.html" class = "nav-link">Checkout Template</a>
-        </li>
-
-        <li class = "nav-item">
-            <a href="#citations" class = "nav-link">Citations</a>
-        </li>
-        <li class = "nav-item">
-            <div class = "dropdown">
-                <a href="#" class = "nav-link dropdown-toggle" >Services</a>
-                <ul class="nav-list dropdown-content" id = "myDropdown">
-                  <li class="nav-item">
-                    <a href="sg_home.html" class = "nav-link">Homepage</a>
-                  </li>
-
-                  <li class="nav-item">
-                      <a href="#" class = "nav-link">Number 2</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class = "nav-link">Number 3</a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-      </ul>
-    </nav>
-    </div>
     <div class="header" id="topOfThePage">
         <figure><img src="img/nlogo.png" alt="LaChoco logo" width="300" /></figure>
         <h1> La Choco Style Guide</h1>
@@ -95,10 +43,10 @@
       <section class="element">
         <h3>In-text link</h3>
         <h4>Sample code:</h4>
-        <code>&lt;p&gt; &lt;a href ="sg_home.html" id ="intext"&gt;La Choco</a> , we sell the best taste.&lt;/p&gt;</code>
+        <code>&lt;p&gt; &lt;a href ="sg_home.html" id ="intext"&gt;La Choco&lt;/a&gt; , we sell the best taste.&lt;/p&gt;</code>
         <h4>Rendered element:</h4>
         <!--lab2:Add a different hover and focus state styling to the in-text link.-->
-        <p><a href="sg_home.html" id="intext">La Choco</a> , we sell the best taste.</p>
+        <p><a href="home.html" id="intext">La Choco</a> , we sell the best taste.</p>
 
       </section>
 
@@ -106,9 +54,46 @@
       <section class="element">
         <h3>Navigation link</h3>
         <h4>Sample code:</h4>
-        <code>&lt;nav class="main_nav"&gt;&nbsp;<br>&lt;a href ="sg_home.html"&gt; Home &lt;/a&gt;<br>&nbsp;&lt;/nav&gt;</code>
+
+        
+        <code>
+          &lt;nav id="top_nav"&gt;<br>
+          &nbsp;&nbsp;&lt;i class="fas fa-times toggleB"&gt; &lt;/i&gt;<br>
+          &nbsp;&nbsp;&lt;ul class="nav-list"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="home.html" class="nav-link">Homepage&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="la_store.html" class="nav-link">Store&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="la_aboutus.html" class="nav-link">About Us&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="la_contactus.html" class="nav-link "&gt;Contact Us&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+
+          &nbsp;&nbsp;&lt;/ul&gt;<br>
+
+          &lt;/nav&gt;<br>
+        </code>
         <h4>Rendered element:</h4>
-        <nav class="main_nav"><a href="sg_home.html">Home</a></nav>
+        <a href="home.html" class="navButton">Home</a>
+        <br>
+        <br>
+        <a href="#productlist" class="navButton">Product</a>
+        <br>
+        <br>
+        <a href="#paymentcart" class="navButton">Payment</a>
+        <br>
+        <br>
+        <a href="#font" class="navButton">Font</a>
+        <br>
+        <br>
+        <a href="#shoppingcart" class="navButton">Shopping Cart</a>
+
 
       </section>
 
@@ -163,7 +148,9 @@
         <code>&lt;a href="sg_home.html"&gt; &lt;img id="image" src= "img/chocobar_maya70.png" alt="Maya70%chocolate"&gt; &lt;/a&gt;</code>
         <h4>Rendered element: </h4>
         <!--lab2:Add a different hover and focus state styling to the image as a link.-->
+        <div class="imagelink">
         <a href="sg_home.html"><img id="image" src="img/chocobar_maya70.png" alt="Maya70%chocolate" ></a>
+        </div>
       </section>
 
 
@@ -233,29 +220,7 @@
 
 
     <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
-      <!--main navigation-->
-      <section class="element">
-        <h3>Main Navigation</h3>
 
-        <h4>Sample code:</h4>
-        <code>&lt;nav&gt; <br>
-        &nbsp;  &lt;a href="sg_home.html"&gt;Home&lt;/a&gt; <br>
-        &nbsp;  &lt;a href="sg_home.html"&gt;chocolate&lt;/a&gt; <br>
-        &nbsp;  &lt;a href="sg_home.html"&gt;your cart&lt;/a&gt; <br>
-         &lt;/nav&gt;</code>
-
-        <h4>Rendred element:</h4>
-
-        <nav class="main_nav">
-          <a href="sg_home.html">Home</a>
-          <a href="sg_home.html">chocolate</a>
-          <a href="sg_home.html">your cart</a>
-          
-        </nav>
-
-      </section>
 
       <!--Product/Service Listing-->
       <section class="element">
@@ -290,25 +255,25 @@
 
         <h4>Rendered element:</h4>
 
-        <section>
+        <section class = "productImageList" id="productlist">
           <div class="productImage">
-            <figure>
+              <div class="imgcontainer">
               <img src="img/chocobar_maya70.png" alt="Maya70%chocolate">
-            </figure>
+            </div>
             <h4>70% Maya</h4>
             <a href="sg_home.html"> More information →</a>
           </div>
           <div class="productImage">
-            <figure>
+            <div class="imgcontainer">
               <img src="img/chocobar_wanpu70.png" alt="Wanpu70%chocolate">
-            </figure>
+              </div>
             <h4>70% Wanpu</h4>
             <a href="sg_home.html"> More information →</a>
           </div>
           <div class="productImage">
-            <figure>
+            <div class="imgcontainer">
               <img src="img/chocobar_zorzal70.png" alt="Zorza70%chocolate">
-            </figure>
+              </div>
             <h4>70% Zorzal</h4>
             <a href="sg_home.html"> More information →</a>
           </div>
@@ -322,94 +287,151 @@
 
         <h4>Sample code</h4>
         <code>
-          &lt;form&gt; <br>
-          &nbsp; &lt;section id="row"&gt;<br>
-          &nbsp; &lt;h3&gt;Payment Form&lt;/h3&gt;<br>
-          &nbsp; &nbsp;&lt;div class="col-radio"&gt;<br>
+          <!-- &lt;div class="checkoutall"&gt;<br>
+          &lt;div class="row" id="toMe"&gt;<br>
+          &nbsp;&nbsp;&lt;div class="col-75"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br> -->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="row"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-50"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3>Billing Address&lt;/h3&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="fname"&lt;i class="fa fa-user"&gt;&lt;/i&gt;Full Name&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="fname" name="firstname" placeholder="Ethan"&gt;<br>
   
-          &nbsp; &nbsp; &nbsp; &lt;label &gt;Select Card Type:&lt;/label&gt;<br>
-          &nbsp; &nbsp; &nbsp; &lt;input type="radio" name="cardtype" value="Visa"&gt;Visa<br>
-          &nbsp; &nbsp; &nbsp; &lt;input type="radio" name="cardtype" value="Visa"&gt;Mastercard<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="email"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;Email&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="email" name="email" placeholder="lza104@sfu.ca"&gt;<br>
   
-          &nbsp; &nbsp; &lt;/div&gt;&lt;br&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="adr"&gt;&lt;i class="fa fa-address-card-o"&gt;&lt;/i&gt;Address&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="adr" name="address" placeholder="example address"&gt;<br>
   
-          &nbsp; &nbsp;&lt;div class="col"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="city"&gt;&lt;i class="fa fa-institution"&lt;/i&gt;City&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="city" name="city" placeholder="Surrey"&gt;<br>
   
-          &nbsp; &nbsp; &nbsp; &lt;label for="inputcname"&gt;Cardholder's name:&lt;/label&gt;<br>
-          &nbsp; &nbsp; &nbsp;  &lt;input id="inputcname" placeholder="Margaret LU" type="text"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-50"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="state"&gt;State&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="state" name="state" placeholder="Van"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-50"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="zip"&gt;Zip&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="zip" name="zip" placeholder="V5A 3W6"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
   
-              
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-50"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3>Payment&lt;/h3&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="fname"&gt;Accepted Card&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="icon-container"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-cc-visa" style="color: navy;"&gt;&lt;/i&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-cc-amex" style="color: blue;"&gt;&lt;/i&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-cc-mastercard" style="color: red;"&gt;&lt;/i&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-cc-discover" style="color: orange;"&gt;&lt;/i&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="cname">Name On Card&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="cname" name="cardnumber" placeholder="Ethan Zhu"&gt;<br>
   
-              &nbsp; &nbsp; &nbsp; &lt;label for="inputcardnumber"&gt;Card Number:&lt;/label&gt;<br>
-              &nbsp; &nbsp; &nbsp;  &lt;input id="inputcardnumber" placeholder="16-digits" type="text"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="ccnum">Credit Card&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000"&gt;<br>
   
-              &nbsp; &nbsp;  &lt;/div&gt;&lt;br&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="expmonth">Exp Month&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="expmonth" name="expmonth" placeholder="12"&gt;<br>
   
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="row"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-50"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="expyear">Year&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="expyear" name="expyear" placeholder="2022"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-50"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="cvv">CVV&lt;/label&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="cvv" name="cvv" placeholder="333"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
   
-              &nbsp; &nbsp; &lt;div class="col"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
   
-              &nbsp; &nbsp; &nbsp; &lt;label for="inputDate"&gt;Expiration date:&lt;/label&gt;<br>
-              &nbsp; &nbsp; &nbsp; &lt;input id="inputDate" placeholder="15" type="text"&gt;<br>
-  
-              &nbsp; &nbsp; &nbsp; &lt;label for="inputYear"&gt;Year:&lt;/label&gt;<br>
-              &nbsp; &nbsp; &nbsp;  &lt;input id="inputYear" placeholder="2019" type="text"&gt;<br>
-  
-              
-              &nbsp; &nbsp; &nbsp; &lt;label for="code"&gt;Security Code:&lt;/label&gt;<br>
-              &nbsp; &nbsp; &nbsp;  &lt;input id="code" name="code" placeholder="3-digits" type="text"&gt;<br>
-  
-              &nbsp; &nbsp;  &lt;/div&gt;&lt;br&gt;<br>
-  
-              &nbsp; &nbsp; &lt;button type="submit" &gt;Submit&lt;/button&gt;<br>
-  
-              &nbsp; &lt;/section&gt;<br>
-  
-               &lt;/form&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
       </code>
 
         <h4>Rendered element:</h4>
 
-        <form>
-          <section id="row">
-            <h3>Payment Form</h3>
-            <div class="col-radio">
+        <div class="checkoutall" id="paymentcart">
+          <div class="row" id="toMe">
+              <div class="col-75">
+                  <div class="container">
+                      <form action="/action_page.php">
+                          <div class="row">
+                              <div class="col-50">
+                                  <h3>Billing Address</h3>
+                                  <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Ethan">
 
-              <label>Select Card Type: </label><br>
-              <input type="radio" name="cardtype" value="Visa" class="rd">Visa
-              <span class="checkmark"></span>
-              <input type="radio" name="cardtype" value="Visa" class="rd">Mastercard
-              <span class="checkmark"></span>
-            </div><br>
+                                  <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                                  <input type="text" id="email" name="email" placeholder="lza104@sfu.ca">
 
-            <div class="col">
+                                  <label for="adr"><i class="fa fa-address-card-o"></i>Address</label>
+                                  <input type="text" id="adr" name="address" placeholder="example address">
 
-              <label for="inputcname">Cardholder's name:</label>
-              <input id="inputcname" placeholder="Margaret LU" type="text">
+                                  <label for="city"><i class="fa fa-institution"></i>City</label>
+                                  <input type="text" id="city" name="city" placeholder="Surrey">
 
-              <label for="inputcardnumber">Card Number:</label>
-              <input id="inputcardnumber" placeholder="16-digits" type="text">
+                                  <div class="row">
+                                      <div class="col-50">
+                                          <label for="state">State</label>
+                                          <input type="text" id="state" name="state" placeholder="Van">
+                                      </div>
+                                      <div class="col-50">
+                                          <label for="zip">Zip</label>
+                                          <input type="text" id="zip" name="zip" placeholder="V5A 3W6">
+                                      </div>
 
-            </div><br>
+                                  </div>
+                              </div>
+                              <div class="col-50">
+                                  <h3>Payment</h3>
+                                  <label for="fname">Accepted Card</label>
+                                  <div class="icon-container">
+                                      <i class="fa fa-cc-visa" style="color: navy;"></i>
+                                      <i class="fa fa-cc-amex" style="color: blue;"></i>
+                                      <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                                      <i class="fa fa-cc-discover" style="color: orange;"></i>
+                                  </div>
+                                  <label for="cname">Name On Card</label>
+                                  <input type="text" id="cname" name="cardnumber" placeholder="Ethan Zhu">
+
+                                  <label for="ccnum">Credit Card</label>
+                                  <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+
+                                  <label for="expmonth">Exp Month</label>
+                                  <input type="text" id="expmonth" name="expmonth" placeholder="12">
+
+                                  <div class="row">
+                                      <div class="col-50">
+                                          <label for="expyear">Year</label>
+                                          <input type="text" id="expyear" name="expyear" placeholder="2022">
+                                      </div>
+                                      <div class="col-50">
+                                          <label for="cvv">CVV</label>
+                                          <input type="text" id="cvv" name="cvv" placeholder="333">
+                                      </div>
+
+                                  </div>
+
+                              </div>
+                          </div>
+                      </form>
 
 
-            <div class="col">
 
-              <label for="inputDate">Expiration date:</label>
-              <input id="inputDate" placeholder="01" type="text">
+                      <label>
+                          <input type="checkbox" checked="checked" name="sameadr">Shipping address same as
+                          billing</label>
+                      <input type="submit" value="Continue To checkbox" class="submitBtn">
+                  </div>
+              </div>
+          </div>
+      </div>
 
-              <label for="inputYear">Year:</label>
-              <input id="inputYear" placeholder="2019" type="text">
-
-              <label for="code">Security Code:</label>
-              <input id="code" name="code" placeholder="3-digits" type="text">
-
-            </div><br>
-
-            <button type="submit">Submit</button>
-
-          </section>
-
-        </form>
 
       </section>
 
@@ -466,7 +488,7 @@
 
         <h4>Rendered element:</h4>
 
-        <section class="tables">
+        <section class="tables" id="shoppingcart">
 
           <table>
             <tr>
@@ -478,7 +500,7 @@
             <tr>
               <td>1.</td>
               <td>
-                <figure><img src="img/chocobar_maya70.png" alt="Maya70%chocolate">
+                <figure><img src="img/chocobar_maya70_small.png" alt="Maya70%chocolate">
                   <figcaption>70% Maya</figcaption>
                 </figure>
 
@@ -493,7 +515,7 @@
             <tr>
                 <td>2.</td>
                 <td>
-                  <figure><img src="img/chocobar_wanpu70.png" alt="Wanpu70%chocolate">
+                  <figure><img src="img/chocobar_maya70_small.png" alt="Wanpu70%chocolate">
                     <figcaption>70% Wanpu</figcaption>
                   </figure>
   
@@ -518,9 +540,11 @@
           </section>
 
         </section>
+
+        
       </section>
 
-    </section>
+
     <!-- // COMBINED ELEMENTS SECTION -->
 
 
@@ -545,20 +569,24 @@
     </section>
 
     <!--3. assemble brand components -->
-    <section class="element banding">
+    <section class="element banding" id="font">
       <h2>Branding components </h2>
       <ul>
         <!--font-->
         <li>Font
           <figure>
-            <img src="img/bodoni font.png" alt="bodoni-font" width="400">
+            <img src="img/bodyfont.png" alt="bodoni-font" width="400">
             <figcaption>LOGO font: Bondoni</figcaption>
           </figure>
           <figure>
             <img src="img/FGM.png" alt="Franklin Gothic Medium font" width="400">
-            <figcaption>Heading2 font: Franklin Gothic Medium</figcaption>
+            <figcaption>Heading/About Us/Slider Font</figcaption>
           </figure>
-         
+            <figure>
+              <img src="img/bodyfont.png" alt="LaChoco logo" width="400">
+              <figcaption>Body Font</figcaption>
+            </figure>
+
         </li>
         <!--Colour palettes-->
         <li>Colour palettes
@@ -568,6 +596,7 @@
         <li>Potential imagery
           <figure><img src="img/nlogo.png" alt="LaChoco logo" width="200"></figure>
         </li>
+        
       </ul>
     </section>
 
