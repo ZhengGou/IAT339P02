@@ -32,7 +32,7 @@ h1 {
     font-size: 2rem;
 }
 
-.toggleA:hover {
+.toggleA:hover,.toggleA:focus,.toggleA:active {
     color: #F9F3E8;
 }
 
@@ -49,7 +49,7 @@ h1 {
     font-size: 2rem;
 }
 
-.header-main-cart-account .fa-cart-plus:hover {
+.header-main-cart-account .fa-cart-plus:hover，.fa-cart-plus:focus,.fa-cart-plus:active {
     color: #F9F3E8;
 }
 
@@ -68,7 +68,7 @@ h1 {
     z-index: 5000;
 }
 
-.toggleB:hover {
+.toggleB:hover,.toggleB:focus,.toggleB:active {
     color: #902e3f;
 }
 
@@ -226,7 +226,7 @@ footer * {
 
 /* style whole page button*/
 
-.submitBtn:hover {
+.submitBtn:hover， .submitBtn:focus，.submitBtn:active {
     color: black;
     background-color: #EDCC92;
 }
@@ -240,7 +240,9 @@ button {
     transition: 0.8s;
 }
 
-button:hover {
+button:hover,
+button:active,
+button:focus {
     color: black;
     background-color: #EDCC92;
 }
@@ -513,7 +515,10 @@ main {
 
 .events-context p {
     text-align: left;
-    letter-spacing: .9px;
+}
+
+.events-context p:nth-child(4) {
+    letter-spacing: .1rem;
 }
 
 .events-num {
@@ -717,7 +722,9 @@ label {
     transition: 0.8s;
 }
 
-.submitBtn:hover {
+.submitBtn:hover,
+.submitBtn:focus,
+.submitBtn:active {
     color: black;
     background-color: #EDCC92;
 }
@@ -876,7 +883,7 @@ td>span {
     transition: .5s;
 }
 
-.shoppingcart-firstrow img:hover {
+.shoppingcart-firstrow img:hover,.shoppingcart-firstrow img:focus,.shoppingcart-firstrow img:active {
     transform: scale(1.1);
     opacity: .8;
     cursor: pointer;
@@ -938,7 +945,7 @@ td>span {
     transition: 0.8s;
 }
 
-.proceedBtn:hover {
+.proceedBtn:hover,.proceedBtn:focus,.proceedBtn:active {
     color: black;
     background-color: #EDCC92;
 }
@@ -1078,7 +1085,7 @@ td>span {
     transition: .5s
 }
 
-.listRow div img:hover {
+.listRow div img:hover,.listRow div img:focus,.listRow div img:active {
     opacity: .85;
     transform: scale(1.1);
     cursor: pointer;
@@ -1298,7 +1305,7 @@ textarea {
     transition: transform 2s;
 }
 
-.box:hover .imgBox img {
+.box:hover,.box:focus,.box:active .imgBox img {
     transform: scale(1.1);
 }
 
@@ -1306,6 +1313,50 @@ textarea {
     text-align: left;
     padding-top: 1rem;
 }
+
+/* Styling Contact Us */
+.contact-content{
+    width:70%;
+    margin:0 auto 2rem auto;
+    text-align: center;
+    font-size:16px;
+}
+
+.contact-content h2{
+    font-size:1.2rem;
+    line-height:3rem;
+}
+
+.contact-content label{
+    font-size:0.9rem;
+}
+
+.contact-content div{
+    border-bottom:1px solid grey;
+    width:100%;
+    padding:2rem 20%;
+}
+
+.contact-content div:nth-child(1) button{
+    margin:1rem auto;
+}
+
+.contact-content div:nth-child(2) p{
+    font-size: .8rem;
+    line-height: 2rem;
+}
+
+.contact-content div:nth-child(2)>p:nth-child(2){
+    font-weight: bold;
+}
+
+.contact-content div:nth-child(2)>p:nth-child(3){
+    margin-top:1rem;
+}
+
+
+
+
 
 /*Responsive*/
 
