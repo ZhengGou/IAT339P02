@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
-    <title>Your shopping cart</title>
+    <title>Cart</title>
 
     <link href="css/Lachoco-main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -55,7 +55,7 @@
     </nav>
     <script src="main.js"></script>
     <main>
-        <h2 class="maintitle">Checkout</h2>
+        <h1 class="maintitle">Checkout</h1>
         <div class="shoppingcart">
             <div class="shoppingcart-firstrow">
                 <div class="firstrow-1">
@@ -64,7 +64,7 @@
                         <a href="la_detail.html">
                             <img src="img/chocobar_maya70_small.png" alt="productimg_maya">
                         </a>
-                        <p>Maya 70%</p>
+                        <p>70% Maya Mountain Belize</p>
                     </div>
                 </div>
 
@@ -92,6 +92,10 @@
                         </select>
                     </div>
                 </div>
+
+                <div id="removeProduct">
+                    <button type="button">Remove</button>
+                    <i class="fa fa-close"></i></div>
             </div>
 
             <div class="shoppingcart-secondrow">
@@ -103,7 +107,7 @@
             <div class="row" id="toMe">
                 <div class="col-75">
                     <div class="container">
-                        <form action="/action_page.php">
+                        <form>
                             <div class="row">
                                 <div class="col-50">
                                     <h3>Billing Address</h3>

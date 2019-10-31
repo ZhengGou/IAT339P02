@@ -84,14 +84,27 @@ go = function(){
   myVar = setInterval(sliderNext, 5000);
 }
 
+function unScroll(){
+  var top = $(document).scrollTop();
+  $(document).on('scroll.unable', function(e){
+    $(document).scrollTop(top);
+  })
+}
+
+function removeUnScroll(){
+  $(document).unbind("scroll.unable");
+}
+
 showMenu = function(){
   $('#top_nav').animate({"left":"0"}, 1000);
-  $('body').css({"overflow":"hidden"});
+  $('html').css({"scroll-behavior":"auto"});
+  unScroll();
 }
 
 hideMenu = function(){
   $('#top_nav').animate({'left':'-25rem'}, 1000);
-  $('body').css({"overflow":""});
+  $('html').css({"scroll-behavior":"smooth"});
+  removeUnScroll();
 }
 
 var n = 0;

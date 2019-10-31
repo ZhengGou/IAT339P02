@@ -8,14 +8,15 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 h1 {
-    font-size: 36px;;
+    font-size: 36px;
     font-family: 'Playball', cursive;
-    border-bottom: 2px solid #64644E;
+    border-bottom: 4px solid #64644E;
+    border-bottom-style: double;
     text-align: center;
-    margin: 2em;
+    margin: 0 auto;
+    width: 70%;
+    padding-top:2rem;
 }
 
 /* styling navigation bar */
@@ -57,6 +58,7 @@ h1 {
 .toggleB {
     font-size: 1.5rem;
     position: absolute;
+    margin-left:-0.95rem;
     margin-right: 1rem;
     top: 5rem;
     text-align: center;
@@ -431,43 +433,15 @@ main {
     padding: 2rem 10%;
     text-decoration: none;
     color: #69524B;
-    transition: color .5s;
+    transition: color .5s,font-size .5s;
 }
 
-/* #quote a:hover, #quote a:focus, #quote a:active{
+#quote a:hover, #quote a:focus, #quote a:active{
     color:#902e3f;
-} */
+    font-size:18px}
 
-.quote-text {
-    position: relative;
-}
 
-.quote-text a:after {
-    content: ' ';
-    position: absolute;
-    z-index: 10;
-    bottom: 10;
-    left: 73%;
-    display: block;
-    width: 80px;
-    height: 5px;
-    transform: translate(-50%);
-}
 
-.quote-text a:hover:after {
-    height: 1px;
-    animation: ad_width .3s linear forwards;
-    background: #902e3f;
-}
-
-@keyframes ad_width {
-    from {
-        width: 0
-    }
-    to {
-        width: 35%;
-    }
-}
 
 #quote>div:nth-child(2) {
     width: 40%;
@@ -491,7 +465,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    width: 60%;
+    width: 70%;
     min-height: 800px;
     margin: 5rem auto;
     color: #69524B;
@@ -502,13 +476,11 @@ main {
     position: absolute;
     max-width: 140%;
     height: auto;
-    top: 12rem;
+    top: 6rem;
     left: 10rem;
     background-repeat: no-repeat;
     transform: scale(0.2) rotate(-15deg);
 }
-
-
 
 .context-1 p {
     font-size: 20px;
@@ -535,12 +507,13 @@ main {
 
 .events-context h4 {
     text-align: left;
-    margin-left: 2.65rem;
+    margin-left: 2rem;
     font-size: 1.25rem;
 }
 
 .events-context p {
     text-align: left;
+    letter-spacing: .9px;
 }
 
 .events-num {
@@ -601,7 +574,7 @@ main {
     width: 100%;
     height: 100%;
     z-index: 10;
-    opacity: .2;
+    opacity: .1;
     transition: opacity .5s linear;
 }
 
@@ -651,6 +624,7 @@ table {
     margin-bottom: 2rem;
     float: right;
 }
+
 
 /* styling form*/
 
@@ -885,21 +859,20 @@ td>span {
 .shoppingcart-firstrow {
     display: flex;
     margin: 2rem auto;
-    width: 95%;
+    width: 70%;
     height: auto;
-    border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
 }
 
 .shoppingcart-firstrow h3 {
     font-size: 1.2rem;
+    border-bottom:1px solid gray;
 }
 
 .shoppingcart-firstrow img {
-    width: 30%;
-    margin: .5rem auto;
+    margin: 0;
     transition: .5s;
 }
 
@@ -921,21 +894,33 @@ td>span {
 }
 
 .firstrow-2 {
-    width: 25%;
+    width: 15%;
     text-align: center;
+}
+
+.checkoutpage-imgcontainer{
+    display:flex;
+    width:100%;
+    margin-top:2rem;
 }
 
 .checkoutpage-imgcontainer p {
     font-size: 1rem;
+    width:100%;
+    text-align: left;
+    margin-left:-40%;
+    padding:8% 0 0 0;
 }
 
 .checkoutpage-imgcontainer img {
-    width: 10%;
+    width: 20%;
     height: auto;
+    margin-left:-40%;
+    padding:0;
 }
 
 .checkoutpage-price {
-    margin-top: 15%;
+    margin-top:5rem;
 }
 
 .checkoutpage-price p {
@@ -956,6 +941,31 @@ td>span {
 .proceedBtn:hover {
     color: black;
     background-color: #EDCC92;
+}
+
+
+#removeProduct{
+    width:20%;
+    border-top:1px solid grey;
+    margin:1.9rem auto 0 auto;
+    text-align: center;
+}
+
+#removeProduct button{
+    margin-top:5rem;
+    display:block;
+}
+
+#removeProduct i{
+    display:none;
+    color:#69524B;
+    transition: color 0.5s;
+}
+
+#removeProduct i:hover,#removeProduct i:focus,#removeProduct i:active{
+
+    color:#EDCC92;
+    
 }
 
 /* end  styling la_checkout page */
@@ -1082,7 +1092,6 @@ td>span {
 }
 
 .listRow div p {
-    
     font-size: 1.2em;
     color: #69524B;
 }
@@ -1237,10 +1246,8 @@ textarea {
     width: 100%;
 }
 
-
 .textandreview-2 {
     flex-wrap: wrap;
-    
 }
 
 /* event_image */
@@ -1300,35 +1307,16 @@ textarea {
     padding-top: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Responsive*/
 
 @media screen and (max-width:70em) {
+    h1{
+        width:75%;
+    }
+
     .menu-toggle {
         font-size: 2rem;
     }
-
     /*   #top_nav {
         position: absolute;
         top: 0;
@@ -1480,22 +1468,19 @@ textarea {
         height: auto;
         margin-bottom: 2rem;
     }
-    .listRow .imgcontainer-2 img{
+    .listRow .imgcontainer-2 img {
         width: 80%;
     }
     .listRow .imgcontainer {
         width: 195px;
         height: 426px;
-        margin:1rem auto;
+        margin: 1rem auto;
         margin-bottom: 1rem;
     }
-
     .listRow div img {
         width: 195px;
         height: 426px;
     }
-    
-
     .chocoName {
         width: 100%;
         padding-top: .0em;
@@ -1549,45 +1534,14 @@ textarea {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:480px) {
-    #top_nav{
-        width:100%;
-     }
+    h1{
+        width:90%;
+    }
 
+    #top_nav {
+        width: 100%;
+    }
     .nav-list {
         padding-top: 30%;
     }
@@ -1674,6 +1628,7 @@ textarea {
     }
     .toggleB {
         font-size: 1rem;
+        margin-left:-0.6rem;
     }
     #pen img {
         display: none;
@@ -1691,8 +1646,7 @@ textarea {
         font-size: 16px;
         width: 95%;
     }
-
-    .checkoutpage-imgcontainer img{
+    .checkoutpage-imgcontainer img {
         width: 30%;
     }
     .checkoutpage-price {
@@ -1700,4 +1654,79 @@ textarea {
     }
 
 
+
+
+
+    .shoppingcart-firstrow {
+        width: 90%;
+    }
+    
+    .shoppingcart-firstrow h3 {
+        font-size: .9rem;
+    }
+    
+    .shoppingcart-secondrow {
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+    }
+    
+    .firstrow-1 {
+        width: 40%;
+        text-align: center;
+    }
+    
+    .firstrow-2 {
+        width: 22%;
+        text-align: center;
+    }
+    
+    .checkoutpage-imgcontainer{
+        display:block;
+        width:100%;
+        margin-top:2rem;
+    }
+    
+    .checkoutpage-imgcontainer p {
+        font-size: 1rem;
+        width:80%;
+        text-align: center;
+        margin:0 auto;
+        padding:8% 0 0 0;
+    }
+    
+    .checkoutpage-imgcontainer img {
+        width: 40%;
+        height: auto;
+        margin:0;
+        padding:0;
+    }
+    
+    .checkoutpage-price {
+        margin-top:5rem;
+    }
+    
+    .checkoutpage-price p {
+        font-size: 1rem;
+    }
+
+
+
+
+    #removeProduct{
+        width:16%;
+        border-top:1px solid grey;
+        margin:1.42rem auto 0 auto;
+        text-align: center;
+    }
+    
+    #removeProduct button{
+        display:none;
+    }
+    
+    #removeProduct i{
+        font-size: 1.25rem;
+        display:block;
+        margin-top:5rem;
+    }
 }
