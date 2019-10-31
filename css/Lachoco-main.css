@@ -1172,6 +1172,8 @@ td>span {
     text-decoration: none;
 }
 
+
+
 .addbtn2:hover, .addbtn2:focus, .addbtn2:active {
     text-decoration: none;
     background-color: #EDCC92;
@@ -1271,13 +1273,14 @@ textarea {
 .eventBox {
     display: flex;
     margin: 2rem auto;
-    width: 90%;
+    width: 70%;
 }
 
 .box {
     flex-wrap: wrap;
     width: 50%;
     margin: 2rem;
+    margin-left: 0;
     box-sizing: border-box;
     display: inline-block;
 }
@@ -1291,6 +1294,7 @@ textarea {
 .eventExplanation p {
     text-align: justify;
     margin: 2rem;
+    margin-right: 0;
     text-align: left;
 }
 
@@ -1311,6 +1315,9 @@ textarea {
 .review {
     text-align: left;
     padding-top: 1rem;
+}
+.review form{
+    padding-left: 2rem;
 }
 
 /* Styling Contact Us */
@@ -1770,5 +1777,9 @@ textarea {
         font-size: 1.25rem;
         display: block;
         margin-top: 5rem;
+    }
+    .detailpagelink{
+        text-align: center;
+        margin: 1rem auto;
     }
 }
